@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,74 +9,79 @@
     <link rel="icon" href="img/favicon.png" type="image/png">
     <style>
         ::selection {
-            background-color: #E94E85; /* Indigo-500 */
-            color: #FFFFFF; /* White */
+            background-color: #E94E85;
+            /* Indigo-500 */
+            color: #FFFFFF;
+            /* White */
         }
     </style>
 </head>
 
 <body class="bg-gray-100 relative">
     <img src="img/Rectangle 54.svg" alt="Background" class="absolute top-[500px] inset-0 w-full h-[80%] z-[-1]">
-     <!-- Navbar -->
-  <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
-    <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
+    <!-- Navbar -->
+    <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
+        <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
 
-    <!-- Hamburger Button for Mobile (hidden on desktop) -->
-    <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
-      <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
-    </button>
-    <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
-      <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
-    </button>
+        <!-- Hamburger Button for Mobile (hidden on desktop) -->
+        <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
+            <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
+        </button>
+        <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
+            <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
+        </button>
 
-    <!-- Links (hidden on mobile) -->
-    <div class="hidden md:flex items-center space-x-4">
-      <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
-      <a href="classes.html"
-        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
-      <a href="camps.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
-      <a href="events.html"
-        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
-      <a href="about.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">About
-        Us</a>
-      <a href="contact.html"
-        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
-    </div>
+        <!-- Links (hidden on mobile) -->
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+            <a href="classes.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
+            <a href="camps.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
+            <a href="events.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
+            <a href="about.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">About
+                Us</a>
+            <a href="contact.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
+        </div>
 
-    <!-- Contact Icons (hidden on mobile) -->
-    <div class="hidden md:flex space-x-2 items-center">
-      <a href="tel:+45 20 98 74 77">
-        <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-          alt="call">
-      </a>
-      <a href="mailto:info@elstudio.dk">
-        <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-          alt="mail">
-      </a>
-    </div>
+        <!-- Contact Icons (hidden on mobile) -->
+        <div class="hidden md:flex space-x-2 items-center">
+            <a href="tel:+45 20 98 74 77">
+                <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                    class="bg-[#E94E85] rounded-full p-3" alt="call">
+            </a>
+            <a href="mailto:info@elstudio.dk">
+                <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                    class="bg-[#E94E85] rounded-full p-3" alt="mail">
+            </a>
+        </div>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
-      <div class="flex flex-col justify-center items-center space-y-6">
-        <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
-        <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
-        <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
-        <a href="events.html" class="text-white text-lg font-oswald uppercase">Events</a>
-        <a href="about.html" class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">About Us</a>
-        <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
-      </div>
-      <div class="space-x-2 flex justify-center">
-        <a href="tel:+45 20 98 74 77">
-          <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-            alt="call">
-        </a>
-        <a href="mailto:info@elstudio.dk">
-          <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-            alt="mail">
-        </a>
-      </div>
-    </div>
-  </nav>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
+            <div class="flex flex-col justify-center items-center space-y-6">
+                <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+                <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
+                <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
+                <a href="events.html" class="text-white text-lg font-oswald uppercase">Events</a>
+                <a href="about.html" class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">About
+                    Us</a>
+                <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
+            </div>
+            <div class="space-x-2 flex justify-center">
+                <a href="tel:+45 20 98 74 77">
+                    <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                        class="bg-[#E94E85] rounded-full p-3" alt="call">
+                </a>
+                <a href="mailto:info@elstudio.dk">
+                    <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                        class="bg-[#E94E85] rounded-full p-3" alt="mail">
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <div class="max-w-7xl mx-auto px-4">
         <!-- About Us Section -->
@@ -84,46 +90,77 @@
             <div class="flex md:flex-row flex-col justify-center items-center md:space-x-8 space-y-6">
                 <img src="img/grouppicture.png" alt="grouppicture" class="md:w-1/3">
                 <p class="font-inter md:w-2/3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+                    At ElStudio, dancing is not just about learning steps—it’s about embracing the joy of movement,
+                    connecting with others, and feeling free. We offer a wide range of classes every week for children,
+                    teens, young adults, and seniors. There’s no strict dress code, and we encourage you to come as you
+                    are. Our atmosphere is welcoming and relaxed, and everyone feels like part of the community.
+                    ElStudio is proud to be one of the most affordable dance schools in Copenhagen, offering
+                    high-quality instruction from experienced teachers across various styles, all while maintaining a
+                    relaxed and friendly environment.
                 </p>
             </div>
         </section>
 
         <section class="py-8 px-10 mt-8 bg-white w-full shadow-md">
             <div class="flex md:flex-row flex-col justify-center md:items-start items-start md:space-x-8">
-              <div class="w-full md:w-1/2">
-                <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939] m-0">Learn to dance and get better</h2>
-                <p class="font-inter m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                </p>
-              </div>
-              <div class="w-full md:w-1/2 mt-8 md:mt-0">
-                <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939] m-0">Why you should start dancing</h2>
-                <p class="font-inter m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                </p>
-              </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939] m-0">Learn to dance and get
+                        better</h2>
+                    <p class="font-inter m-0">
+                        At ElStudio, we believe that dancing is a continuous journey, where there’s always something new
+                        to learn. Whether you're a beginner or an experienced dancer, you can join at any time, even
+                        mid-season, and only pay for the remaining weeks. For our couple dancing classes, you don't need
+                        a partner; we switch partners regularly so you can dance with multiple people and improve
+                        faster. Our instructors bring years of experience, ensuring you get the best guidance. We also
+                        offer private lessons, group classes, bachelor/bachelorette parties, and corporate events to
+                        help everyone find joy through dance.
+                    </p>
+                </div>
+                <div class="w-full md:w-1/2 mt-8 md:mt-0">
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939] m-0">Why you should start
+                        dancing</h2>
+                    <p class="font-inter m-0">
+                        Dance is not just a physical activity—it’s a way to build confidence, release stress, and feel
+                        alive. At ElStudio, dancing gives you newfound energy, a stronger body, and a clearer mind. Our
+                        classes mix fun with technique, offering a wide range of styles like Salsa, Bachata, Hip Hop,
+                        Afrobeat, and Jazz, catering to all levels. The social aspect of dancing is a big focus at our
+                        school. Whether you’re dancing with a partner or alone, our classes create a positive and
+                        engaging space where you can meet new people and make lasting connections.
+                    </p>
+                </div>
             </div>
-          </section>          
+        </section>
 
+        <section class="py-8 px-10 mt-8 bg-white w-full shadow-md">
+            <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Events with ElStudio</h2>
+            <p class="font-inter">
+                ElStudio is not just a place to learn dance—it's a community that thrives through participation in
+                exciting events and festivals. Each year, we take part in several local festivals like the Copenhagen
+                Carnival, 48-Hour Festival, and more. These events provide our members with a platform to perform and
+                connect with other dancers. We also organize special events such as club nights for our members and
+                collaborate with guest instructors from around the world for workshops and performances. Our annual
+                dance camp and cultural trips to Cuba offer unforgettable experiences filled with dance, music, and
+                local culture.
+            </p>
+        </section>
+
+        <!-- FAQ Section -->
         <h2 class="text-2xl font-oswald font-bold uppercase my-5 text-pink-500 text-center">FREQUENTLY ASKED QUESTIONS
         </h2>
         <div class="flex flex-col md:grid grid-cols-2 bg-white px-5 py-3">
+
             <div class="grid grid-cols-12 gap-4 p-6">
                 <div class="col-span-3 flex justify-center items-start py-5">
-                    <img src="img/icon/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" class="h-[80px] pt-2" alt="">
+                    <img src="img/icon/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" class="h-[80px] pt-2"
+                        alt="">
                 </div>
                 <div class="col-span-9 flex flex-col">
-                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Where does the teaching take place?</h2>
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Where does the teaching
+                        take place?</h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        We have many classes, and therefore, the teaching takes place at multiple locations: Nørrebro
+                        (with close proximity between premises), Østerbro, Vesterbro, and Holmen. You can view a
+                        complete overview of the premises here.
                     </p>
                 </div>
             </div>
@@ -133,9 +170,12 @@
                     <img src="img/icon/dresscode.svg" class="h-[80px] pt-2" alt="">
                 </div>
                 <div class="col-span-9 flex flex-col">
-                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Is there a dresscode?</h2>
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Is there a dress code?</h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        There is no strict dress code at ElStudio, and you are welcome to come in any clothing or shoes
+                        you feel comfortable in. However, we do have some recommendations for specific classes, such as
+                        Twerk, Burlesque, Bellydance, and Salsa/Bachata. Please visit our website for detailed
+                        recommendations based on the class you're attending.
                     </p>
                 </div>
             </div>
@@ -145,9 +185,12 @@
                     <img src="img/icon/triallesson.svg" class="h-[80px] pt-2" alt="">
                 </div>
                 <div class="col-span-9 flex flex-col">
-                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">How do I book a trial lesson?</h2>
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">How do I book a trial
+                        lesson?</h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        You can book a trial class if you'd like to try a session before committing. Simply visit our
+                        class schedule, select the class you're interested in, and choose the "trial class" option when
+                        booking.
                     </p>
                 </div>
             </div>
@@ -157,9 +200,13 @@
                     <img src="img/icon/cost.svg" class="h-[80px] pt-2" alt="">
                 </div>
                 <div class="col-span-9 flex flex-col">
-                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">How much do different teams cost?</h2>
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">How much do different
+                        classes cost?</h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        We offer some of the most affordable classes in Copenhagen. Prices vary depending on the class
+                        and its duration, with children's classes ranging from 120-240 DKK per month and adult classes
+                        typically costing around 60 DKK per session. You can start at any point during the term and only
+                        pay for the remaining weeks.
                     </p>
                 </div>
             </div>
@@ -171,7 +218,9 @@
                 <div class="col-span-9 flex flex-col">
                     <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">How do I pay?</h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Payment is made upon registration for each class. The price is listed under each course, and you
+                        can pay through our online platform. For children's classes, there's a fixed monthly fee, and
+                        discounts are available for signing up for multiple classes.
                     </p>
                 </div>
             </div>
@@ -183,7 +232,9 @@
                 <div class="col-span-9 flex flex-col">
                     <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">How do I register?</h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        You can register for classes by selecting the class you're interested in from our schedule and
+                        clicking the "Subscribe" button. If this is your first time, you will need to create a profile.
+                        Additionally, we charge an annual membership fee of 100 DKK for new members.
                     </p>
                 </div>
             </div>
@@ -193,9 +244,11 @@
                     <img src="img/icon/late.svg" class="h-[80px] pt-2" alt="">
                 </div>
                 <div class="col-span-9 flex flex-col">
-                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Can you be late for class?</h2>
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Can I be late for class?
+                    </h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        We recommend arriving on time to avoid disturbing the class. However, if you're running late,
+                        please join as quietly and respectfully as possible.
                     </p>
                 </div>
             </div>
@@ -205,26 +258,28 @@
                     <img src="img/icon/sick.svg" class="h-[80px] pt-2" alt="">
                 </div>
                 <div class="col-span-9 flex flex-col">
-                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">What if I'm sick or on a holiday?</h2>
+                    <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">What if I'm sick or on
+                        holiday?</h2>
                     <p class="font-inter">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        If you're unable to attend a class due to illness or a holiday, please notify us in advance.
+                        Unfortunately, we cannot offer refunds for missed classes, but you're welcome to join another
+                        class as a makeup session if space allows.
                     </p>
                 </div>
             </div>
-            
         </div>
     </div>
+
 
     <!-- Offer Section - Full Width -->
     <section class="w-full my-5">
         <img src="img/grouppicture2.png" alt="" class="w-full h-56 object-cover">
         <div class="bg-pink-500 py-6 flex justify-center items-center">
             <h2 class="text-2xl font-oswald font-bold uppercase text-white mx-4">See what we have to offer</h2>
-            <button class="bg-white text-pink-500 py-2 px-4 rounded font-oswald uppercase">Read more</button>
+            <a href="classes.html" class="bg-white text-pink-500 py-2 px-4 rounded font-oswald uppercase">Read more</a>
         </div>
-    </section>
+    </section>    
 
-    <!-- Footer - Full Width -->
     <!-- Footer - Full Width -->
     <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
         <div>
@@ -273,7 +328,6 @@
             </p>
         </div>
     </footer>
-
 </body>
 
 </html>
@@ -283,22 +337,21 @@
     const hamburger = document.getElementById('hamburger');
     const closeMenu = document.getElementById('closeMenu');
     const mobileMenu = document.getElementById('mobileMenu');
-    const logo = document.getElementById('logo');
     const body = document.body; // Get the body element to manipulate scrolling
-  
+
     // Open menu (hamburger click)
     hamburger.addEventListener('click', () => {
-      mobileMenu.classList.remove('hidden');   // Show menu
-      hamburger.classList.add('hidden');       // Hide hamburger button
-      closeMenu.classList.remove('hidden');    // Show close button
-      body.style.overflow = 'hidden';          // Disable scrolling
+        mobileMenu.classList.remove('hidden');   // Show menu
+        hamburger.classList.add('hidden');       // Hide hamburger button
+        closeMenu.classList.remove('hidden');    // Show close button
+        body.style.overflow = 'hidden';          // Disable scrolling
     });
-  
+
     // Close menu (close button click)
     closeMenu.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');      // Hide menu
-      hamburger.classList.remove('hidden');    // Show hamburger button
-      closeMenu.classList.add('hidden');       // Hide close button
-      body.style.overflow = 'auto';            // Enable scrolling
+        mobileMenu.classList.add('hidden');      // Hide menu
+        hamburger.classList.remove('hidden');    // Show hamburger button
+        closeMenu.classList.add('hidden');       // Hide close button
+        body.style.overflow = 'auto';            // Enable scrolling
     });
-  </script>
+</script>
