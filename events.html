@@ -1,176 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Studio</title>
+    <title>El Studio - Events</title>
     <link href="output.css" rel="stylesheet"> <!-- Ensure this contains all necessary Tailwind styles -->
     <link rel="icon" href="img/favicon.png" type="image/png">
     <style>
         ::selection {
-            background-color: #E94E85; /* Indigo-500 */
-            color: #FFFFFF; /* White */
+            background-color: #E94E85;
+            /* Indigo-500 */
+            color: #FFFFFF;
+            /* White */
         }
     </style>
 </head>
+
 <body class="bg-gray-100 relative">
-  <img src="img/Rectangle 54.svg" alt="Background" class="absolute w-screen h-full zoom-90 z-[-1]">
-     <!-- Navbar -->
-  <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
-    <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
+    <img src="img/Rectangle 54.svg" alt="Background" class="absolute w-screen h-full zoom-90 z-[-1]">
+    <!-- Navbar -->
+    <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
+        <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
 
-    <!-- Hamburger Button for Mobile (hidden on desktop) -->
-    <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
-      <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
-    </button>
-    <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
-      <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
-    </button>
+        <!-- Hamburger Button for Mobile (hidden on desktop) -->
+        <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
+            <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
+        </button>
+        <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
+            <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
+        </button>
 
-    <!-- Links (hidden on mobile) -->
-    <div class="hidden md:flex items-center space-x-4">
-      <a href="index.html" class="text-white text-lg font-oswald uppercase bg-[#E94E85] py-5 px-2">Home</a>
-      <a href="classes.html"
-        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
-      <a href="camps.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
-      <a href="events.html"
-        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Events</a>
-      <a href="about.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
-        Us</a>
-      <a href="contact.html"
-        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
-    </div>
+        <!-- Links (hidden on mobile) -->
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+            <a href="classes.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
+            <a href="camps.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
+            <a href="events.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Events</a>
+            <a href="about.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
+                Us</a>
+            <a href="contact.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
+        </div>
 
-    <!-- Contact Icons (hidden on mobile) -->
-    <div class="hidden md:flex space-x-2 items-center">
-      <a href="tel:+45 20 98 74 77">
-        <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-          alt="call">
-      </a>
-      <a href="mailto:info@elstudio.dk">
-        <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-          alt="mail">
-      </a>
-    </div>
+        <!-- Contact Icons (hidden on mobile) -->
+        <div class="hidden md:flex space-x-2 items-center">
+            <a href="tel:+45 20 98 74 77">
+                <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                    class="bg-[#E94E85] rounded-full p-3" alt="call">
+            </a>
+            <a href="mailto:info@elstudio.dk">
+                <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                    class="bg-[#E94E85] rounded-full p-3" alt="mail">
+            </a>
+        </div>
 
-    <!-- Mobile Menu (hidden by default) -->
-    <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
-      <div class="flex flex-col justify-center items-center space-y-6">
-        <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
-        <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
-        <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
-        <a href="events.html" class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Events</a>
-        <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
-        <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
-      </div>
-      <div class="space-x-2 flex justify-center">
-        <a href="tel:+45 20 98 74 77">
-          <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-            alt="call">
-        </a>
-        <a href="mailto:info@elstudio.dk">
-          <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-            alt="mail">
-        </a>
-      </div>
-    </div>
-  </nav>
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
+            <div class="flex flex-col justify-center items-center space-y-6">
+                <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+                <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
+                <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
+                <a href="events.html"
+                    class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Events</a>
+                <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
+                <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
+            </div>
+            <div class="space-x-2 flex justify-center">
+                <a href="tel:+45 20 98 74 77">
+                    <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                        class="bg-[#E94E85] rounded-full p-3" alt="call">
+                </a>
+                <a href="mailto:info@elstudio.dk">
+                    <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                        class="bg-[#E94E85] rounded-full p-3" alt="mail">
+                </a>
+            </div>
+        </div>
+    </nav>
+
     <div class="max-w-7xl mx-auto px-4">
         <div class="bg-white shadow-md flex flex-col p-6 mb-6 mt-5">
             <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-[#393939]">UPCOMING EVENTS</h2>
-            <img src="img/elstudiobanner_5.jpg" class="w-full h-96 object-cover" alt="">
-            <p class="font-inter opacity-80 text-[#393939] py-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
+            <img src="img/elstudiobanner_5.jpg" class="w-full h-96 object-cover" alt="Upcoming Events">
+            <p class="font-inter opacity-80 text-[#393939] py-5">Join us for a variety of exciting dance workshops and
+                events throughout the year! Whether you're a beginner or an experienced dancer, our events provide a fun
+                way to enhance your skills, meet new people, and enjoy the vibrant energy of dance. Check out our
+                upcoming events below.</p>
         </div>
 
         <h2 class="text-2xl font-oswald font-bold uppercase my-5 text-pink-500 text-center">SEPTEMBER</h2>
-        
-    
+
         <div class="md:grid md:grid-cols-2 flex flex-col gap-3">
-    <div class="bg-white shadow-md flex flex-col p-6 my-3">
-        <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">WORKSHOPS WITH SAUL</h2>
-        <img src="img/DANGER.png" class="w-full h-96 object-cover" alt="">
-        <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
-        <p class="font-inter opacity-80 text-[#393939] py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">find out more</button>
-      </div>
+            <div class="bg-white shadow-md flex flex-col p-6 my-3">
+                <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">WORKSHOPS WITH SAUL</h2>
+                <img src="img/DANGER.png" class="w-full h-96 object-cover" alt="Workshop with Saul">
+                <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
+                <p class="font-inter opacity-80 text-[#393939] py-3">Join Saul for an intensive Salsa workshop! This
+                    event is perfect for improvers and intermediate dancers looking to sharpen their footwork and body
+                    movement. The workshop covers Salsa footwork, bodywork, and couple work. No partner required, but
+                    you're welcome to bring one. <br><br>Location: Kildevæld Kulturhus, Copenhagen.</p>
+                <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out
+                    more</button>
+            </div>
 
-      <div class="bg-white shadow-md flex flex-col p-6 my-3">
-        <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">WORKSHOPS WITH DANGER</h2>
-        <img src="img/DEMIS.png" class="w-full h-96 object-cover" alt="">
-        <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
-        <p class="font-inter opacity-80 text-[#393939] py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">find out more</button>
-      </div>
+            <div class="bg-white shadow-md flex flex-col p-6 my-3">
+                <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">WORKSHOPS WITH DANGER</h2>
+                <img src="img/DEMIS.png" class="w-full h-96 object-cover" alt="Workshop with Danger & Marielkis">
+                <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
+                <p class="font-inter opacity-80 text-[#393939] py-3">Danger and Marielkis bring you an advanced Salsa
+                    workshop. This session focuses on couple work for intermediate to advanced dancers. A chance to
+                    refine your dance technique with top Cuban instructors. <br><br>Location: Kildevæld Kulturhus,
+                    Copenhagen. <br><br> </p>
+                <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out
+                    more</button>
+            </div>
 
-      <div class="bg-white shadow-md flex flex-col p-6 my-3">
-        <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">WORKSHOPS WITH DEMIS</h2>
-        <img src="img/SAUL.png" class="w-full h-96 object-cover" alt="">
-        <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
-        <p class="font-inter opacity-80 text-[#393939] py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">find out more</button>
-      </div>
+            <div class="bg-white shadow-md flex flex-col p-6 my-3">
+                <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">WORKSHOPS WITH DEMIS</h2>
+                <img src="img/SAUL.png" class="w-full h-96 object-cover" alt="Workshop with Demis & Yaneisy">
+                <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
+                <p class="font-inter opacity-80 text-[#393939] py-3">This open-level Bachata workshop led by Demis is
+                    perfect for anyone interested in improving their Bachata skills. You’ll work on body movement,
+                    musicality, and partner dancing techniques. <br><br>Location: Kildevæld Kulturhus, Copenhagen.</p>
+                <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out
+                    more</button>
+            </div>
 
-      <div class="bg-white shadow-md flex flex-col p-6 my-3">
-        <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">LEONI TORRES LIVE IN CONCERT</h2>
-        <img src="img/LEONI.png" class="w-full h-96 object-cover" alt="">
-        <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
-        <p class="font-inter opacity-80 text-[#393939] py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">find out more</button>
-      </div>
-
-      </div>
+            <div class="bg-white shadow-md flex flex-col p-6 my-3">
+                <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">LEONI TORRES LIVE IN CONCERT
+                </h2>
+                <img src="img/LEONI.png" class="w-full h-96 object-cover" alt="Leoni Torres Concert">
+                <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">SEPTEMBER 28</h2>
+                <p class="font-inter opacity-80 text-[#393939] py-3">Don't miss out on the chance to see Cuban singer
+                    Leoni Torres live in concert as part of his Europe Tour 2024! After the concert, join us for an
+                    exciting dance party with a live DJ. <br><br>Location: Amager Bio, Copenhagen.</p>
+                <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out
+                    more</button>
+            </div>
+        </div>
     </div>
 
-  <!-- Footer - Full Width -->
-  <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
-    <div>
-        <h2 class="font-oswald text-2xl font-bold mb-2">ELSTUDIO.DK</h2>
-        <p class="font-inter text-sm opacity-80">
-            Dansende Dynamisk Verden Skole<br>
-            c/o ElStudio<br>
-            Blågårdsgade 37, stuen<br>
-            2200 København. CVR: 26170974<br>
-            Email: info@elstudio.dk<br>
-            Phone +4520987477 (We also have WhatsApp)<br>
-            Monday - Thursday: kl. 11.00-16.00 and Friday: kl. 11.00-14.00.<br>
-            (After the office hours, you can send an SMS, and we will get back to you)
-        </p>
-    </div>
-    <div>
-        <h3 class="font-oswald text-2xl font-bold mb-2">DANCE CLASSES</h3>
-        <p class="font-inter text-sm opacity-80">
-            Kids & Teen Classes<br>
-            Dance Classes<br>
-            Latin Dance Classes
-        </p>
-    </div>
-    <div>
-        <h3 class="font-oswald text-2xl font-bold mb-2">BOOK US</h3>
-        <p class="font-inter text-sm opacity-80">
-            Private lessons<br>
-            Bachelorette parties<br>
-            Dance events<br>
-            Performances<br>
-            Company events<br>
-            Cultural events<br>
-            Birthdays<br>
-            Kids’ parties
-        </p>
-    </div>
-    <div>
-        <h3 class="font-oswald text-2xl font-bold mb-2">ABOUT</h3>
-        <p class="font-inter text-sm opacity-80">
-            About us<br>
-            Newsletter<br>
-            ElStudio Crew<br>
-            Conditions of use<br>
-            FAQ<br>
-            Sitemap
-        </p>
-    </div>
-</footer>
+    <!-- Footer - Full Width -->
+    <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
+        <div>
+            <h2 class="font-oswald text-2xl font-bold mb-2">ELSTUDIO.DK</h2>
+            <p class="font-inter text-sm opacity-80">
+                Dansende Dynamisk Verden Skole<br>
+                c/o ElStudio<br>
+                Blågårdsgade 37, stuen<br>
+                2200 København. CVR: 26170974<br>
+                Email: info@elstudio.dk<br>
+                Phone +4520987477 (We also have WhatsApp)<br>
+                Monday - Thursday: kl. 11.00-16.00 and Friday: kl. 11.00-14.00.<br>
+                (After the office hours, you can send an SMS, and we will get back to you)
+            </p>
+        </div>
+        <div>
+            <h3 class="font-oswald text-2xl font-bold mb-2">DANCE CLASSES</h3>
+            <p class="font-inter text-sm opacity-80">
+                Kids & Teen Classes<br>
+                Dance Classes<br>
+                Latin Dance Classes
+            </p>
+        </div>
+        <div>
+            <h3 class="font-oswald text-2xl font-bold mb-2">BOOK US</h3>
+            <p class="font-inter text-sm opacity-80">
+                Private lessons<br>
+                Bachelorette parties<br>
+                Dance events<br>
+                Performances<br>
+                Company events<br>
+                Cultural events<br>
+                Birthdays<br>
+                Kids’ parties
+            </p>
+        </div>
+        <div>
+            <h3 class="font-oswald text-2xl font-bold mb-2">ABOUT</h3>
+            <p class="font-inter text-sm opacity-80">
+                About us<br>
+                Newsletter<br>
+                ElStudio Crew<br>
+                Conditions of use<br>
+                FAQ<br>
+                Sitemap
+            </p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
 
 <script>
@@ -180,20 +205,20 @@
     const mobileMenu = document.getElementById('mobileMenu');
     const logo = document.getElementById('logo');
     const body = document.body; // Get the body element to manipulate scrolling
-  
+
     // Open menu (hamburger click)
     hamburger.addEventListener('click', () => {
-      mobileMenu.classList.remove('hidden');   // Show menu
-      hamburger.classList.add('hidden');       // Hide hamburger button
-      closeMenu.classList.remove('hidden');    // Show close button
-      body.style.overflow = 'hidden';          // Disable scrolling
+        mobileMenu.classList.remove('hidden');   // Show menu
+        hamburger.classList.add('hidden');       // Hide hamburger button
+        closeMenu.classList.remove('hidden');    // Show close button
+        body.style.overflow = 'hidden';          // Disable scrolling
     });
-  
+
     // Close menu (close button click)
     closeMenu.addEventListener('click', () => {
-      mobileMenu.classList.add('hidden');      // Hide menu
-      hamburger.classList.remove('hidden');    // Show hamburger button
-      closeMenu.classList.add('hidden');       // Hide close button
-      body.style.overflow = 'auto';            // Enable scrolling
+        mobileMenu.classList.add('hidden');      // Hide menu
+        hamburger.classList.remove('hidden');    // Show hamburger button
+        closeMenu.classList.add('hidden');       // Hide close button
+        body.style.overflow = 'auto';            // Enable scrolling
     });
-  </script>
+</script>
