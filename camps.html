@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Studio</title>
+    <title>El Studio - Camps</title>
     <link href="output.css" rel="stylesheet"> <!-- Ensure this contains all necessary Tailwind styles -->
     <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="elstudio.dk" />
+    <meta property="og:url" content="https://elstudio.dk" />
+    <meta property="og:description" content="Join ElStudio for exciting dance classes, workshops, and events in Copenhagen. We offer Salsa, Bachata, Latin, Hip Hop, Ballet, and more for all ages.">
+    <meta property="og:image" content="https://damhuisict.nl/project-mette/img/logowhite%201.png">
     <style>
         ::selection {
             background-color: #E94E85; /* Indigo-500 */
@@ -15,28 +22,66 @@
 </head>
 <body class="bg-gray-100 relative">
   <img src="img/Rectangle 54.svg" alt="Background" class="absolute w-screen h-full zoom-90 z-[-1]">
-    <!-- Navbar -->
-    <nav class="bg-[#393939] px-20 py-5 shadow-md flex justify-between items-center">
-        <img src="img/logowhite 1.png" class="h-8" alt="ElStudio">
-        <div class="space-x-4">
-            <a href="index.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Home</a>
-            <a href="classes.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
-            <a href="camps.html" class="text-white text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Camps</a>
-            <a href="events.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
-            <a href="about.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About Us</a>
-            <a href="contact.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
-        </div>
-        <div class="space-x-2 flex flex-row justify-center items-center">
-            <a href="tel:+45 20 98 74 77">
-                <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
-                    class="bg-[#E94E85] rounded-full p-3" alt="call">
-            </a>
-            <a href="mailto:info@elstudio.dk">
-                <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
-                    class="bg-[#E94E85] rounded-full p-3" alt="mail">
-            </a>
-        </div>
-    </nav>
+     <!-- Navbar -->
+  <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
+    <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
+
+    <!-- Hamburger Button for Mobile (hidden on desktop) -->
+    <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
+      <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
+    </button>
+    <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
+      <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
+    </button>
+
+    <!-- Links (hidden on mobile) -->
+    <div class="hidden md:flex items-center space-x-4">
+      <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+      <a href="classes.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
+      <a href="camps.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Camps</a>
+      <a href="events.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
+      <a href="about.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
+        Us</a>
+      <a href="contact.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
+    </div>
+
+    <!-- Contact Icons (hidden on mobile) -->
+    <div class="hidden md:flex space-x-2 items-center">
+      <a href="tel:+45 20 98 74 77">
+        <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+          alt="call">
+      </a>
+      <a href="mailto:info@elstudio.dk">
+        <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+          alt="mail">
+      </a>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
+      <div class="flex flex-col justify-center items-center space-y-6">
+        <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+        <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
+        <a href="camps.html" class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Camps</a>
+        <a href="events.html" class="text-white text-lg font-oswald uppercase">Events</a>
+        <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
+        <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
+      </div>
+      <div class="space-x-2 flex justify-center">
+        <a href="tel:+45 20 98 74 77">
+          <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+            alt="call">
+        </a>
+        <a href="mailto:info@elstudio.dk">
+          <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+            alt="mail">
+        </a>
+      </div>
+    </div>
+  </nav>
 
         <!-- Hero Image Slider -->
         <div class="relative">
@@ -47,8 +92,8 @@
     <div class="max-w-7xl mx-auto px-4">
         <div class="bg-white shadow-md flex flex-col p-6 mb-6 mt-5">
             <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-[#393939]">DANCE CAMPS</h2>
-            <img src="img/elstudiobanner_5.jpg" class="w-full h-96 object-cover" alt="">
-            <p class="font-inter opacity-80 text-[#393939] py-5" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
+            <img src="img/grouppicure3.jpg" class="w-full h-96 object-cover" alt="">
+            <p class="font-inter opacity-80 text-[#393939] py-5">ElStudio organizes a variety of dance camps every year, designed for people of all ages and levels. These camps are a great opportunity to immerse yourself in dance, make new friends, and have a memorable summer. Whether you're into Salsa, Afro-Cuban rhythms, or just want to stay active, our camps offer something for everyone. They take place in beautiful surroundings and combine intensive dance training with fun activities such as sports, beach outings, and exploring local sights. You don't need a partner to join, and everyone is welcome. Come and spend an unforgettable week with us!</p>
         </div>
     
         <div class="md:grid md:grid-cols-2 flex flex-col gap-3">
@@ -56,24 +101,24 @@
         <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">CUBAN SALSA SUMMER CAMP</h2>
         <img src="img/salsa camp_2.png" class="w-full h-96 object-cover" alt="">
         <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">JULY 21-27, 2024</h2>
-        <p class="font-inter opacity-80 text-[#393939] py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">find out more</button>
+        <p class="font-inter opacity-80 text-[#393939] py-3">Join our Cuban Salsa Summer Camp for a week of immersive salsa dancing, with expert instructors and participants from all over the world. You'll get daily salsa lessons, plenty of time to practice, and opportunities to relax and socialize with others. Whether you're a beginner or experienced, this camp is designed to help you improve your skills and have a great time. You don’t need a partner to join. Expect fun parties and performances in the evenings, along with plenty of dancing under the stars!</p>
+        <a href="salsacamp.html" class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase text-center">Find out more</a>
       </div>
 
       <div class="bg-white shadow-md flex flex-col p-6 my-3">
-        <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">CUBAN SALSA SUMMER CAMP</h2>
+        <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">AFRO CUBAN AND RUMBA SUMMER CAMP</h2>
         <img src="img/afro cuban_2.png" class="w-full h-96 object-cover" alt="">
         <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">JULY 21-27, 2024</h2>
-        <p class="font-inter opacity-80 text-[#393939] py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">find out more</button>
+        <p class="font-inter opacity-80 text-[#393939] py-3">Running alongside the Salsa Camp, the Afro Cuban and Rumba Summer Camp offers specialized training in Afro-Cuban dance and Rumba rhythms. It’s an intense but fun camp for those who want to dive deep into these rich dance traditions. The camp takes place in the afternoons, so you can combine it with salsa in the mornings if you like. With live music and a focus on technique, expression, and culture, this camp is ideal for dancers of all levels looking to broaden their skills and knowledge.</p>
+        <a href="afrocuban.html" class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase text-center">Find out more</a>
       </div>
 
       <div class="bg-white shadow-md flex flex-col p-6 my-3">
         <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">SUMMER DANCE CAMP</h2>
         <img src="img/FACEBOOK _NEW_summer dance camp 2024 cover_0.png" class="w-full h-96 object-cover" alt="">
         <h2 class="text-2xl font-oswald font-bold uppercase my-3 text-pink-500">JULY 28 - AUGUST 3, 2024</h2>
-        <p class="font-inter opacity-80 text-[#393939] py-3" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">find out more</button>
+        <p class="font-inter opacity-80 text-[#393939] py-3">The Summer Dance Camp is open to everyone who wants to stay active and have fun through dance and sports. With a variety of dance styles taught throughout the week, this camp is perfect for those who want to enjoy a full summer experience. There will be time for relaxation and exploration, including beach trips and visits to nearby towns. If you're looking for an energizing week full of dance, fitness, and outdoor activities, this camp is for you.</p>
+        <a href="summerdancecamp.html" class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase text-center">Find out more</a>
       </div>
 
       </div>
@@ -130,3 +175,28 @@
 
 </body>
 </html>
+
+<script>
+    // Elements
+    const hamburger = document.getElementById('hamburger');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const logo = document.getElementById('logo');
+    const body = document.body; // Get the body element to manipulate scrolling
+  
+    // Open menu (hamburger click)
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');   // Show menu
+      hamburger.classList.add('hidden');       // Hide hamburger button
+      closeMenu.classList.remove('hidden');    // Show close button
+      body.style.overflow = 'hidden';          // Disable scrolling
+    });
+  
+    // Close menu (close button click)
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');      // Hide menu
+      hamburger.classList.remove('hidden');    // Show hamburger button
+      closeMenu.classList.add('hidden');       // Hide close button
+      body.style.overflow = 'auto';            // Enable scrolling
+    });
+  </script>

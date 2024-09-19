@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Studio</title>
+  <title>El Studio - Home</title>
   <link href="output.css" rel="stylesheet"> <!-- Ensure this contains all necessary Tailwind styles -->
   <link rel="icon" href="img/favicon.png" type="image/png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="elstudio.dk" />
+  <meta property="og:url" content="https://elstudio.dk" />
+  <meta property="og:description" content="Join ElStudio for exciting dance classes, workshops, and events in Copenhagen. We offer Salsa, Bachata, Latin, Hip Hop, Ballet, and more for all ages.">
+  <meta property="og:image" content="https://damhuisict.nl/project-mette/img/logowhite%201.png">
   <style>
     ::selection {
       background-color: #E94E85;
@@ -19,9 +27,19 @@
 <body class="bg-gray-100 relative">
   <img src="img/Rectangle 54.svg" alt="Background" class="absolute top-[500px] inset-0 w-full h-[80%] z-[-1]">
   <!-- Navbar -->
-  <nav class="bg-[#393939] px-20 py-5 shadow-md flex justify-between items-center">
-    <img src="img/logowhite 1.png" class="h-8" alt="ElStudio">
-    <div class="space-x-4">
+  <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
+    <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
+
+    <!-- Hamburger Button for Mobile (hidden on desktop) -->
+    <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
+      <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
+    </button>
+    <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
+      <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
+    </button>
+
+    <!-- Links (hidden on mobile) -->
+    <div class="hidden md:flex items-center space-x-4">
       <a href="index.html" class="text-white text-lg font-oswald uppercase bg-[#E94E85] py-5 px-2">Home</a>
       <a href="classes.html"
         class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
@@ -33,119 +51,120 @@
       <a href="contact.html"
         class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
     </div>
-    <div class="space-x-2 flex flex-row justify-center items-center">
+
+    <!-- Contact Icons (hidden on mobile) -->
+    <div class="hidden md:flex space-x-2 items-center">
       <a href="tel:+45 20 98 74 77">
         <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
           alt="call">
       </a>
       <a href="mailto:info@elstudio.dk">
-      <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-        alt="mail">
+        <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+          alt="mail">
       </a>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
+      <div class="flex flex-col justify-center items-center space-y-6">
+        <a href="index.html" class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Home</a>
+        <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
+        <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
+        <a href="events.html" class="text-white text-lg font-oswald uppercase">Events</a>
+        <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
+        <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
+      </div>
+      <div class="space-x-2 flex justify-center">
+        <a href="tel:+45 20 98 74 77">
+          <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+            alt="call">
+        </a>
+        <a href="mailto:info@elstudio.dk">
+          <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+            alt="mail">
+        </a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Image Slider -->
   <div class="relative">
-    <img src="img/FACEBOOK _NEW_summer dance camp 2024 cover_0.png" alt="Cuban Camp" class="w-full h-96 object-cover">
+    <img src="img/FACEBOOK _NEW_summer dance camp 2024 cover_0.png" alt="ElStudio Summer Dance Camp" class="w-full h-96 object-cover">
     <!-- Overlayed text or button can go here -->
   </div>
 
   <div class="max-w-7xl mx-auto px-4">
     <!-- Video Section -->
-    <section class="py-8 px-10 mt-8 bg-white w-full shadow-md ">
+    <section class="py-8 px-10 mt-8 bg-white w-full shadow-md">
       <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">Get to Know El Studio</h2>
-      <div class="flex md:flex-row flex-col justify-center items-center space-x-4">
-        <video controls class="w-full m-5">
-          <source src="path_to_video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p class="font-inter opacity-80">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-          totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-        </p>
+      <div class="flex md:flex-row flex-col md:justify-start justify-center md:space-x-8 space-y-4 md:space-y-0">
+        <!-- Video Section -->
+        <div class="relative w-full md:w-1/2 max-w-4xl" style="aspect-ratio: 16 / 9;">
+          <iframe title="ElStudio Intro Video" class="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/KyPj5AKtu58" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <!-- Text Section -->
+        <p class="font-inter opacity-80 w-full md:w-1/2">
+          ElStudio is one of Copenhagen’s most welcoming and versatile dance schools. Offering a variety of styles such as Salsa, Bachata, Hip Hop, Ballet, and more, our mission is to make dance accessible to everyone. Whether you’re a beginner or an advanced dancer, we have something for you. Our talented instructors create a relaxed atmosphere where you can have fun while improving your skills. There’s no dress code—just come as you are. Sign up for one of our classes today and join a community of dance enthusiasts of all ages.
       </div>
     </section>
 
     <!-- Classes Section -->
     <section class="md:grid md:grid-cols-3 flex flex-col py-8">
       <div class="bg-white p-4 shadow-md text-center flex flex-col items-center py-8">
-        <img src="img/icon/local_fire_department_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24 1 (1).svg" alt="">
-        <h3 class="font-bold text-lg font-oswald text-[#393939] pb-5 pt-3">SALSA, BACHATA,
-          TANGO, <br> KIZOMBA,
-          STANDARD & LATIN</h3>
-        <p class="font-inter opacity-80 text-[#393939]">We were the first school to introduce Salsa Classes in Denmark
-          and are still going strong.</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Sign up here</button>
+        <img src="img/icon/local_fire_department_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24 1 (1).svg" alt="Salsa Icon">
+        <h3 class="font-bold text-lg font-oswald text-[#393939] pb-5 pt-3">SALSA, BACHATA, TANGO, <br> KIZOMBA, STANDARD & LATIN</h3>
+        <p class="font-inter opacity-80 text-[#393939] flex-grow pb-8 px-4">We were the first school to introduce Salsa Classes in Denmark and are still going strong.</p>
+        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-auto font-oswald uppercase">Sign up here</button>
       </div>
+
       <div class="bg-white p-4 shadow-md text-center flex flex-col items-center py-8">
-        <img src="img/icon/women.svg" alt="">
+        <img src="img/icon/women.svg" alt="Dance Icon">
         <h3 class="font-bold text-lg font-oswald text-[#393939] pb-5 pt-3">DANCE CLASSES</h3>
-        <p class="font-inter opacity-80 text-[#393939]">We offer dance classes all over Copenhagen in many types of
-          dance styles.</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Sign up here</button>
+        <p class="font-inter opacity-80 text-[#393939] flex-grow pb-8 px-4">We offer dance classes all over Copenhagen in many types of dance styles.</p>
+        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-auto font-oswald uppercase">Sign up here</button>
       </div>
+
       <div class="bg-white p-4 shadow-md text-center flex flex-col items-center py-8">
-        <img src="img/icon/accessibility_new_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24 1.svg" alt="">
+        <img src="img/icon/accessibility_new_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24 1.svg" alt="Kids Icon">
         <h3 class="font-bold text-lg font-oswald text-[#393939] pb-5 pt-3">KIDS & TEEN CLASSES</h3>
-        <p class="font-inter opacity-80 text-[#393939]">We have dance classes for kids in all ages. We have many
-          different styles to chose from.</p>
-        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Sign up here</button>
+        <p class="font-inter opacity-80 text-[#393939] flex-grow pb-8 px-4">We have dance classes for kids in all ages. We have many different styles to choose from.</p>
+        <button class="bg-pink-500 text-white py-2 px-4 rounded mt-auto font-oswald uppercase">Sign up here</button>
       </div>
     </section>
+
 
     <!-- Info section -->
     <section>
       <div class="md:grid md:grid-cols-2 flex flex-col gap-3">
         <div class="bg-white shadow-md flex flex-col p-6">
           <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">DANCE CAMPS</h2>
-          <img src="img/salsa camp_2.png" class="w-full h-96 object-cover" alt="">
-          <p class="font-inter opacity-80 text-[#393939] py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui official</p>
+          <img src="img/salsa camp_2.png" class="w-full h-96 object-cover" alt="Dance Camp">
+          <p class="font-inter opacity-80 text-[#393939] py-5">ElStudio offers annual dance camps for those wanting an immersive experience. Enjoy intensive dance training in Salsa, Bachata, Afro-Cuban rhythms, and more in a relaxed summer setting. </p>
           <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out more</button>
-
         </div>
 
         <div class="bg-white shadow-md flex flex-col p-6">
           <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">TRIAL CLASSES</h2>
-          <img src="img/14976695_335808673440661_1519835911563231151_o (1).jpg" class="w-full h-96 object-cover" alt="">
-          <p class="font-inter opacity-80 text-[#393939] py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui official</p>
+          <img src="img/14976695_335808673440661_1519835911563231151_o (1).jpg" class="w-full h-96 object-cover" alt="Dance Camp">
+          <p class="font-inter opacity-80 text-[#393939] py-5">Not sure if a class is for you? Try out one of our trial classes before committing to a full session. Get a feel for the dance and the atmosphere. <br><br></p>
           <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out more</button>
-
         </div>
 
         <div class="bg-white shadow-md flex flex-col p-6">
           <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">BOOK US</h2>
-          <img src="img/bookos1 (1).jpg" class="w-full h-96 object-cover" alt="">
-          <p class="font-inter opacity-80 text-[#393939] py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui official</p>
+          <img src="img/bookos1 (1).jpg" class="w-full h-96 object-cover" alt="Book Us">
+          <p class="font-inter opacity-80 text-[#393939] py-5">Book ElStudio for private lessons, corporate events, bachelorette parties, or dance performances. We tailor the event to your needs for an unforgettable experience.</p>
           <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out more</button>
-
         </div>
 
         <div class="bg-white shadow-md flex flex-col p-6">
           <h2 class="text-2xl font-oswald font-bold uppercase mb-3 text-[#393939]">DANCE EVENTS AND WORKSHOPS</h2>
-          <img src="img/bookos2 (1).jpg" class="w-full h-96 object-cover" alt="">
-          <p class="font-inter opacity-80 text-[#393939] py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui official</p>
+          <img src="img/bookos2 (1).jpg" class="w-full h-96 object-cover" alt="Dance Events">
+          <p class="font-inter opacity-80 text-[#393939] py-5">We host workshops and dance events for beginners to advanced dancers. Join us for fun and enriching dance experiences, taught by top-notch instructors.</p>
           <button class="bg-pink-500 text-white py-2 px-4 rounded mt-6 font-oswald uppercase">Find out more</button>
         </div>
     </section>
@@ -153,10 +172,10 @@
 
   <!-- Offer Section - Full Width -->
   <section class="w-full my-5">
-    <img src="img/24 1.png" alt="" class="w-full h-56 object-cover">
+    <img src="img/24 1.png" alt="Offer Banner" class="w-full h-56 object-cover">
     <div class="bg-pink-500 py-6 flex justify-center items-center">
       <h2 class="text-2xl font-oswald font-bold uppercase text-white mx-4">See what we have to offer</h2>
-      <button class="bg-white text-pink-500 py-2 px-4 rounded font-oswald uppercase">Read more</button>
+      <a href="classes.html" class="bg-white text-pink-500 py-2 px-4 rounded font-oswald uppercase">Read more</a>
     </div>
   </section>
 
@@ -212,3 +231,28 @@
 </body>
 
 </html>
+
+<script>
+  // Elements
+  const hamburger = document.getElementById('hamburger');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const logo = document.getElementById('logo');
+  const body = document.body; // Get the body element to manipulate scrolling
+
+  // Open menu (hamburger click)
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.remove('hidden');   // Show menu
+    hamburger.classList.add('hidden');       // Hide hamburger button
+    closeMenu.classList.remove('hidden');    // Show close button
+    body.style.overflow = 'hidden';          // Disable scrolling
+  });
+
+  // Close menu (close button click)
+  closeMenu.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');      // Hide menu
+    hamburger.classList.remove('hidden');    // Show hamburger button
+    closeMenu.classList.add('hidden');       // Hide close button
+    body.style.overflow = 'auto';            // Enable scrolling
+  });
+</script>
