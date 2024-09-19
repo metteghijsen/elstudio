@@ -48,6 +48,69 @@
     </nav>
 
     <!-- CONTENT HERE -->
+     <div class="danceinfo">
+        <h1 class="danceinfo_h1">
+            DANCE STYLES
+        </h1>
+        <P class="danceinfo_p">ElStudio has a wide range of dance styles. If there is a style you are interested in that we do not currently have as regular class, you are very welcome to contact us and we can put you on a waiting list for the desired class. Then we will contact you when we have the opportunity to open the class.  </P>
+     </div>
+
+    <section class="allholder">
+        <div class="classesholder">
+            <img class="classesimg" src="img/c1.png" alt="">
+         <a class="classestext" href="#">AFROBEAT</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c2.png" alt="">
+         <a class="classestext" href="#">BOLLYWOOD</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c3.png" alt="">
+         <a class="classestext" href="#">BURLESQUE</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c4.png" alt="">
+         <a class="classestext" href="#">K-POP DANCE</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c5.png" alt="">
+         <a class="classestext" href="#">HIPHOP</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c6.png" alt="">
+         <a class="classestext" href="#">DANCEHALL</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c7.png" alt="">
+         <a class="classestext" href="#">JAZZ & MODERN</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c8.png" alt="">
+         <a class="classestext" href="#">SALSA</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c9.png" alt="">
+         <a class="classestext" href="#">BALLET</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c10.png" alt="">
+         <a class="classestext" href="#">RETRO MIX</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c11.png" alt="">
+         <a class="classestext" href="#">TWERK</a>
+        </div>
+        <div class="classesholder">
+            <img class="classesimg" src="img/c12.png" alt="">
+         <a class="classestext" href="#">BELLYDANCE</a>
+        </div>
+      
+    </section>
+    <div class="butholder">
+        <img src="img/butmobile.png" alt="">
+        <a class="butbtn" href="">Discover your perfect Dance Style</a>
+    </div>
+        
 
     <!-- Footer - Full Width -->
     <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
@@ -99,5 +162,70 @@
     </footer>
 
 </body>
+<style>
+    .danceinfo{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: inset;
+        padding: 20px;
+        margin-top: 20px;
+        
+    }
+    .danceinfo_h1{
+        font-size: 24px;
+        font-weight: bold;
+        padding: 10px 0px 10px 0px;
+        
+    }
+    .danceinfo_p{
+        font-size: 18px;
+    }
+
+    .allholder{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px;
+        background-color: white;
+        margin: 15px;
+        max-width: 100%;
+    }
+
+    .classesholder{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        align-items: center;
+        
+    }
+    
+    .classestext{
+        font-size: 14px;
+        font-weight: bold;
+       padding: 10px 20px 10px 20px;
+       
+        margin: 10px;
+        
+
+    }
+
+    .butholder{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .butbtn{
+        padding: 10px 20px 10px 20px;
+        background-color: #E94E85;
+        color: white;
+        border-radius: 10px;
+        font-weight: bold;
+        align-items: center;
+        margin: 30px;
+    }
+</style>
 
 </html>
