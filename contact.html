@@ -84,6 +84,22 @@
   </nav>
 
     <!-- CONTENT HERE -->
+    <section class="holder">
+      <div>
+        <h1 class="headline font-oswald">Contact</h1>
+        <p class="ptop">Dansende Dynamisk Verden Skole by ElStudio Blågårdsgade 37, st2200 København N</p>
+       </div>
+       <p class="numberholder">Call us at <span class="number">+45 23 98 74 77</span></p>
+       <p class="pmidover">Opening hours:</p>
+       <p class="pmidunder">Monday-Thursday: 11-13 and 15-17
+        Friday: 11-14</p>
+        <p class="pbut">Outside the opening hours, you can send us a text message, and we will contact you as soon as possible.</p>
+        <div class="mapimgholder">
+          <img class="mapimg" src="img/mapweb.png" alt="">
+          <img class="mapimg2" src="img/mapmobile.png" alt="">
+        </div>
+    </section>
+      
 
   <!-- Footer - Full Width -->
   <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
@@ -118,7 +134,7 @@
             Company events<br>
             Cultural events<br>
             Birthdays<br>
-            Kids’ parties
+            Kids parties
         </p>
     </div>
     <div>
@@ -136,6 +152,92 @@
 
 </body>
 </html>
+<style>
+  .holder{
+    display: grid;
+    grid-template-columns: 1fr (repeat 1);
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+  }
+  .headline{
+    font-size: 28px;
+    font-weight: bold;
+    
+
+  }
+  .ptop{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .numberholder{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .number{
+    color: #E94E85;
+  }
+  .pmidover{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
+  }
+  .pmidunder{
+    font-size: 16px;
+  }
+  .pbut{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .mapimg{
+    display: none;
+    
+  }
+  .mapimg2{
+    max-width: 340px;
+    max-height: 290px ;
+
+  }
+  .mapimgholder{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+  }
+  @media only screen and (min-width: 800px){
+    .holder{
+    display: grid;
+    grid-template-columns: 1fr (repeat 1);
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    justify-content: center;
+  }
+    .mapimg{
+    max-width: 100%;
+    max-height: 100% ;
+    margin-top: 40px;
+  }
+  .ptop{
+    max-width: 40%;
+  }
+  .mapimg{
+    display: block;
+    
+  }
+  .mapimg2{
+    max-width: 340px;
+    max-height: 290px ;
+    display: none;
+
+  }
+
+  }
+</style>
 
 <script>
     // Elements

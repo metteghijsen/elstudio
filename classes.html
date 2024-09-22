@@ -97,57 +97,84 @@
     <section class="allholder">
         <div class="classesholder">
             <img class="classesimg" src="img/c1.png" alt="">
-         <a class="classestext" href="#">AFROBEAT</a>
+            
+                <a class="text1 font-oswald" href="classes2.html">Afrobeat</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c2.png" alt="">
-         <a class="classestext" href="#">BOLLYWOOD</a>
+            
+                <a class="text2 font-oswald" href="classes2.html">Bollywood</a>
+            
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c3.png" alt="">
-         <a class="classestext" href="#">BURLESQUE</a>
+            
+                <a class="text5 font-oswald" href="classes2.html">Burlesque</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c4.png" alt="">
-         <a class="classestext" href="#">K-POP DANCE</a>
+            
+                <a class="text3 font-oswald" href="classes2.html">K-pop dance</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c5.png" alt="">
-         <a class="classestext" href="#">HIPHOP</a>
+            
+                <a class="text4 font-oswald" href="classes2.html">Hiphop</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c6.png" alt="">
-         <a class="classestext" href="#">DANCEHALL</a>
+            
+                <a class="text6 font-oswald" href="classes2.html">Dancehall</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c7.png" alt="">
-         <a class="classestext" href="#">JAZZ & MODERN</a>
+            
+                <a class="text7 font-oswald" href="classes2.html">Jazz & modern</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c8.png" alt="">
-         <a class="classestext" href="#">SALSA</a>
+            
+                <a class="text8 font-oswald" href="classes2.html">Salsa</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c9.png" alt="">
-         <a class="classestext" href="#">BALLET</a>
+            
+                <a class="text9 font-oswald" href="classes2.html">Ballet</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c10.png" alt="">
-         <a class="classestext" href="#">RETRO MIX</a>
+            
+                <a class="text10 font-oswald" href="classes2.html">Retro mix</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c11.png" alt="">
-         <a class="classestext" href="#">TWERK</a>
+            
+                <a class="text11 font-oswald" href="classes2.html">Twerk</a>
+            
         </div>
         <div class="classesholder">
             <img class="classesimg" src="img/c12.png" alt="">
-         <a class="classestext" href="#">BELLYDANCE</a>
+            
+                <a class="text12 font-oswald" href="classes2.html">Bellydance</a>
+            
         </div>
       
     </section>
     <div class="butholder">
-        <img src="img/butmobile.png" alt="">
-        <a class="butbtn" href="">Discover your perfect Dance Style</a>
+        <img class="imgweb" src="img/butweb.png" alt="">
+    
+        <img class="imgmobile" src="img/butmobile.png" alt="">
+        <a class="butbtn" href="quiz.html">Discover your perfect Dance Style</a>
     </div>
         
 
@@ -184,7 +211,7 @@
                 Company events<br>
                 Cultural events<br>
                 Birthdays<br>
-                Kids’ parties
+                Kids parties
             </p>
         </div>
         <div>
@@ -236,6 +263,7 @@
         flex-direction: column;
         padding: 5px;
         align-items: center;
+        color: black;
         
     }
     
@@ -248,6 +276,10 @@
         
 
     }
+    .classesimg{
+        max-width: 162px;
+        max-height: 162px ;
+    }
 
     .butholder{
         display: flex;
@@ -256,14 +288,166 @@
         align-items: center;
     }
 
-    .butbtn{
-        padding: 10px 20px 10px 20px;
-        background-color: #E94E85;
-        color: white;
-        border-radius: 10px;
-        font-weight: bold;
+    .butbtn {
+  padding: 10px 40px 10px 40px;
+  background-color: #E94E85;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  align-items: center;
+  margin: 41px;
+  font-size: 12px;
+}
+    .imgweb{
+        display: none;
+    }
+    @media only screen and (min-width: 800px){
+        .butbtn {
+         padding: 10px 40px 10px 40px;
+         background-color: #E94E85;
+         color: white;
+         border-radius: 10px;
+         font-weight: bold;
+         align-items: center;
+         margin: 41px;
+         font-size: 24px;
+    }
+
+        .allholder{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 5px;
+        background-color: white;
+        margin: 15px;
+        max-width: 100%;
+    }
+    .classesimg{
+        max-width: 300px;
+        max-height: 300px ;
+    }
+    .imgweb{
+        display: block;
+    }
+    .imgmobile{
+        display: none;
+    }
+    .classesholder{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
         align-items: center;
-        margin: 30px;
+        color: white;
+        
+    }
+    .text1{
+        padding: 10px 113px 10px 113px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text2{
+        padding: 10px 106px 10px 106px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text3{
+        padding: 10px 98px 10px 98px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text4{
+        padding: 10px 118px 10px 118px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text5{
+        padding: 10px 108px 10px 108px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text6{
+        padding: 10px 108px 10px 108px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text7{
+        padding: 10px 88px 10px 88px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text8{
+        padding: 10px 128px 10px 128px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text9{
+        padding: 10px 124px 10px 124px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text10{
+        padding: 10px 108px 10px 108px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text11{
+        padding: 10px 125px 10px 125px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+    .text12{
+        padding: 10px 103px 10px 103px;
+        background-color: #E94E85;
+        /* border-radius: 10px; */
+        margin-top: 10px;
+        font-size: 24px;
+
+        
+    }
+       
     }
 </style>
 
