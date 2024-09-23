@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Studio - Contact</title>
+    <link href="output.css" rel="stylesheet"> <!-- Ensure this contains all necessary Tailwind styles -->
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="elstudio.dk" />
+    <meta property="og:url" content="https://elstudio.dk" />
+    <meta property="og:description" content="Join ElStudio for exciting dance classes, workshops, and events in Copenhagen. We offer Salsa, Bachata, Latin, Hip Hop, Ballet, and more for all ages.">
+    <meta property="og:image" content="https://damhuisict.nl/project-mette/img/logowhite%201.png">
+    <style>
+      ::selection {
+          background-color: #E94E85; /* Indigo-500 */
+          color: #FFFFFF; /* White */
+      }
+  </style>
+  </head>
+<body class="bg-gray-100 relative">
+  <img src="img/Rectangle 54.svg" alt="Background" class="absolute top-[500px] inset-0 w-full h-[80%] z-[-1]">
+    <!-- Navbar -->
+  <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
+    <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
+
+    <!-- Hamburger Button for Mobile (hidden on desktop) -->
+    <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
+      <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
+    </button>
+    <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
+      <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
+    </button>
+
+    <!-- Links (hidden on mobile) -->
+    <div class="hidden md:flex items-center space-x-4">
+      <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+      <a href="classes.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Classes</a>
+      <a href="camps.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
+      <a href="events.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
+      <a href="about.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
+        Us</a>
+      <a href="contact.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Contact</a>
+    </div>
+
+    <!-- Contact Icons (hidden on mobile) -->
+    <div class="hidden md:flex space-x-2 items-center">
+      <a href="tel:+45 20 98 74 77">
+        <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+          alt="call">
+      </a>
+      <a href="mailto:info@elstudio.dk">
+        <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+          alt="mail">
+      </a>
+    </div>
+
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
+      <div class="flex flex-col justify-center items-center space-y-6">
+        <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+        <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
+        <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
+        <a href="events.html" class="text-white text-lg font-oswald uppercase">Events</a>
+        <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
+        <a href="contact.html" class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Contact</a>
+      </div>
+      <div class="space-x-2 flex justify-center">
+        <a href="tel:+45 20 98 74 77">
+          <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+            alt="call">
+        </a>
+        <a href="mailto:info@elstudio.dk">
+          <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+            alt="mail">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- CONTENT HERE -->
+    <section class="holder">
+        <div class="form-container">
+            <h1>User's details</h1>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+    
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname">
+    
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+    
+                <label for="class-time">Select the class time</label>
+                <input type="text" id="class-time" name="class-time">
+    
+                <a class="submit-btn" href="payment.html">submit</a>
+            </form>
+        </div>
+    </section>
+      
+
+  <!-- Footer - Full Width -->
+  <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
+    <div>
+        <h2 class="font-oswald text-2xl font-bold mb-2">ELSTUDIO.DK</h2>
+        <p class="font-inter text-sm opacity-80">
+            Dansende Dynamisk Verden Skole<br>
+            c/o ElStudio<br>
+            Blågårdsgade 37, stuen<br>
+            2200 København. CVR: 26170974<br>
+            Email: info@elstudio.dk<br>
+            Phone +4520987477 (We also have WhatsApp)<br>
+            Monday - Thursday: kl. 11.00-16.00 and Friday: kl. 11.00-14.00.<br>
+            (After the office hours, you can send an SMS, and we will get back to you)
+        </p>
+    </div>
+    <div>
+        <h3 class="font-oswald text-2xl font-bold mb-2">DANCE CLASSES</h3>
+        <p class="font-inter text-sm opacity-80">
+            Kids & Teen Classes<br>
+            Dance Classes<br>
+            Latin Dance Classes
+        </p>
+    </div>
+    <div>
+        <h3 class="font-oswald text-2xl font-bold mb-2">BOOK US</h3>
+        <p class="font-inter text-sm opacity-80">
+            Private lessons<br>
+            Bachelorette parties<br>
+            Dance events<br>
+            Performances<br>
+            Company events<br>
+            Cultural events<br>
+            Birthdays<br>
+            Kids parties
+        </p>
+    </div>
+    <div>
+        <h3 class="font-oswald text-2xl font-bold mb-2">ABOUT</h3>
+        <p class="font-inter text-sm opacity-80">
+            About us<br>
+            Newsletter<br>
+            ElStudio Crew<br>
+            Conditions of use<br>
+            FAQ<br>
+            Sitemap
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
+<style>
+
+
+.holder {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #ccc;
+    outline: none;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #f06292;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.submit-btn:hover {
+    background-color: #e91e63;
+}
+
+
+</style>
+
+<script>
+    // Elements
+    const hamburger = document.getElementById('hamburger');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const logo = document.getElementById('logo');
+    const body = document.body; // Get the body element to manipulate scrolling
+  
+    // Open menu (hamburger click)
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');   // Show menu
+      hamburger.classList.add('hidden');       // Hide hamburger button
+      closeMenu.classList.remove('hidden');    // Show close button
+      body.style.overflow = 'hidden';          // Disable scrolling
+    });
+  
+    // Close menu (close button click)
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');      // Hide menu
+      hamburger.classList.remove('hidden');    // Show hamburger button
+      closeMenu.classList.add('hidden');       // Hide close button
+      body.style.overflow = 'auto';            // Enable scrolling
+    });
+  </script>

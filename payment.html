@@ -88,24 +88,59 @@
     </nav>
    <section class="holder">
     <div class="form-container">
-        <div class="form-card">
-            <h2>User's details</h2>
-            <form action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <h1>Credit Card Details</h1>
 
-                <label for="surname">Surname</label>
-                <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
+        <form>
+            <!-- Payment Method Section -->
+            <div class="payment-method">
+                <label for="payment-method">Payment Method</label>
+                <div class="payment-icons">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Amex_logo.svg" alt="American Express">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Discover_Card_logo.svg" alt="Discover">
+                </div>
+            </div>
 
-                <label for="age">Age</label>
-                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            <!-- Name on card -->
+            <label for="card-name">Name on card</label>
+            <input type="text" id="card-name" name="card-name" placeholder="Meet Patel">
 
-                <label for="class-time">Select the class time</label>
-                <input type="text" id="class-time" name="class-time" placeholder="Enter class time" required>
+            <!-- Card number -->
+            <label for="card-number">Card number</label>
+            <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000">
 
-                <button type="submit" class="submit-btn">CONTINUE</button>
-            </form>
-        </div>
+            <!-- Card Expiration -->
+            <div class="expiration-row">
+                <div class="expiration">
+                    <label for="expiration-month">Card expiration</label>
+                    <select id="expiration-month" name="expiration-month">
+                        <option>Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <!-- Add more months as needed -->
+                    </select>
+                </div>
+                <div class="expiration">
+                    <label>&nbsp;</label>
+                    <select id="expiration-year" name="expiration-year">
+                        <option>Year</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <!-- Add more years as needed -->
+                    </select>
+                </div>
+            </div>
+
+            <!-- Card Security Code -->
+            <label for="security-code">Card Security Code</label>
+            <input type="text" id="security-code" name="security-code" placeholder="Code">
+
+            <!-- Submit Button -->
+            <a class="submit-btn" href="ty.html">Continue</a>
+        </form>
     </div>
    </section>
      <!-- Footer - Full Width -->
@@ -158,99 +193,111 @@
     </footer>
 </body>
 <style>
-  * {
+    * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-.holder {
+  .holder {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
-    margin-bottom: 40px;
 }
 
 .form-container {
-    position: relative;
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-card {
-    background-color: white;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 10px;
-    padding: 40px;
-    width: 400px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 450px;
 }
 
-h2 {
+h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
     font-size: 14px;
-    color: #333;
+    margin-bottom: 5px;
 }
 
-input {
-    width: 100%;
+input[type="text"] {
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #333;
-}
-
-input::placeholder {
-    color: #bbb;
-}
-
-input:focus {
-    outline: none;
-    border-color: #ff3b7d;
-}
-
-.submit-btn {
-    background-color: #ff3b7d;
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 12px;
     font-size: 16px;
-    cursor: pointer;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    width: 100%;
+}
+
+input[type="text"]:focus {
+    border-color: #ccc;
+    outline: none;
+}
+
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 }
 
-.submit-btn:hover {
-    background-color: #e6336e;
+.payment-icons img {
+    width: 40px;
+    height: auto;
 }
 
-.background-pink {
-    position: absolute;
-    top: 0;
-    left: 0;
+.expiration-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiration {
+    width: 48%;
+}
+
+select {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #ffebf2 50%, #fff 50%);
-    z-index: -1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
 }
 
+select:focus {
+    border-color: #ccc;
+    outline: none;
+}
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #f06292;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #e91e63;
+}
 
 </style>
 <script>

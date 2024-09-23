@@ -126,7 +126,7 @@
 Don’t wait any longer—sign up for our Jazz class today! Whether you’re a beginner or looking to refine your skills, our classes offer the perfect blend of technique, fun, and expression.
           </p>
           <p class="toptext">Click the button below to reserve your spot and join our vibrant dance community.</p>
-          <a href="#" class="btn">Book your class here</a>
+          <a href="signup.html" class="btn">Book your class here</a>
         </div>
 
         <!-- Image Content -->
@@ -143,14 +143,13 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
   </section>
 
   <!-- Video Section -->
-  <section>
-    <div class="video-placeholder">
-      VIDEO PLACEHOLDER
-    </div>
-  </section>
+  
 
   <!-- Schedule Section -->
   <section class="schedule">
+    <div class="video-placeholder">
+      <img class="video" src="img/videoplaceholder.png" alt="">
+    </div>
     <div>
       <h2>Schedule Jazz & Modern</h2>
       <table>
@@ -232,8 +231,8 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
     </div>
   </section>
   </div>
-   <!-- Footer - Full Width -->
-   <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
+  <!-- Footer - Full Width -->
+  <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
     <div>
         <h2 class="font-oswald text-2xl font-bold mb-2">ELSTUDIO.DK</h2>
         <p class="font-inter text-sm opacity-80">
@@ -265,7 +264,7 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
             Company events<br>
             Cultural events<br>
             Birthdays<br>
-            Kids parties
+            Kids’ parties
         </p>
     </div>
     <div>
@@ -280,6 +279,7 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
         </p>
     </div>
 </footer>
+
   <style>
     .holder {
       
@@ -289,10 +289,7 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
     }
 
     /* General Styles */
-    section {
-      padding: 40px;
-      margin: 0;
-    }
+   
     .headline{
         background-color: #bf306f;
         margin: 20px;
@@ -347,11 +344,12 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
     /* Dance Styles Section */
     .dance-styles {
       background-color: white;
-      
-      margin: 20px;
+      padding: 40px;
+      margin-top: 40px;
       margin-left: 40px;
       margin-right: 40px;
     }
+   
 
     /* Jazz & Modern Section */
     .jazz-modern {
@@ -417,22 +415,27 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
       background-color: #bf306f;
     }
 
-    /* Video Placeholder */
-    .video-placeholder {
-      background-color: #ccc;
-      height: 651px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #333;
-      font-size: 24px;
-      font-weight: bold;
-    }
+    
+    
 
     /* Schedule Section */
     .schedule {
       background-color: white;
       color: #333;
+      margin: 20px;
+      padding: 10px;
+      margin-bottom: 100px;
+    }
+    .video{
+      max-width: 1860px;
+      padding: 20px;
+      margin: 0;
+    }
+    .video-placeholder{
+      
+      display: flex;
+      justify-content: center;
+      margin: 20px;
     }
 
     table {
@@ -466,9 +469,7 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
       background-color: white;
       padding: 0;
       margin: 0;
-      /* margin: 20px;
-      margin-left: 40px;
-      margin-right: 40px; */
+      
     }
     .topheadline{
       font-size: 24px;
@@ -493,9 +494,10 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
     }
     .headline{
       font-size: 24px;
-      padding: 5px;
+      padding: 2px;
       background-color: #E94E85;
       margin: 20px;
+      margin-top: 70px;
       color: white;
 
     }
@@ -518,21 +520,22 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
       flex: 1;
       padding: 5px;
       margin-right: 0;
-      margin: 20px;
+      margin: 10px;
       background-color: #ffffff;
       
     }
     .btn {
-      display: inline-block;
+      display: flex;
+      justify-content: center;
       background-color: #d63384;
       color: white;
-      padding: 5px 30px;
-      border-radius: 25px;
+      padding: 5px 10px 5px 10px ;
+      border-radius: 10px;
       font-weight: bold;
       margin-top: 20px;
       font-size: 20px;
-      margin-left: 65px;
       margin-bottom: 20px;
+     
       transition: background-color 0.3s ease;
     }
     .jazz-modern-images {
@@ -540,7 +543,18 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-}
+    }
+    .video {
+      max-width: 370px;
+      padding: 21px;
+      margin: 0;
+    }
+    table {
+      width: 20%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
  }
   </style>
 
