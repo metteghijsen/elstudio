@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Studio - Contact</title>
+    <title>El Studio - Events</title>
     <link href="output.css" rel="stylesheet"> <!-- Ensure this contains all necessary Tailwind styles -->
     <link rel="icon" href="img/favicon.png" type="image/png">
     <meta charset="utf-8" />
@@ -14,225 +15,196 @@
     <meta property="og:description" content="Join ElStudio for exciting dance classes, workshops, and events in Copenhagen. We offer Salsa, Bachata, Latin, Hip Hop, Ballet, and more for all ages.">
     <meta property="og:image" content="https://damhuisict.nl/project-mette/img/logowhite%201.png">
     <style>
-      ::selection {
-          background-color: #E94E85; /* Indigo-500 */
-          color: #FFFFFF; /* White */
-      }
-  </style>
-  </head>
+        ::selection {
+            background-color: #E94E85;
+            /* Indigo-500 */
+            color: #FFFFFF;
+            /* White */
+        }
+    </style>
+</head>
 
-<body>
-  <img src="img/Rectangle 54.svg" alt="Background" class="absolute top-[500px] inset-0 w-full h-[80%] z-[-1]">
-  <!-- Navbar -->
-<nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
- <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
+<body class="bg-gray-100 relative">
+    <img src="img/Rectangle 54.svg" alt="Background" class="absolute w-screen h-full zoom-90 z-[-1]">
+    <!-- Navbar -->
+    <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
+        <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
 
- <!-- Hamburger Button for Mobile (hidden on desktop) -->
- <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
-   <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
- </button>
- <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
-   <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
- </button>
+        <!-- Hamburger Button for Mobile (hidden on desktop) -->
+        <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
+            <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
+        </button>
+        <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
+            <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
+        </button>
 
- <!-- Links (hidden on mobile) -->
- <div class="hidden md:flex items-center space-x-4">
-   <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
-   <a href="classes.html"
-     class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Classes</a>
-   <a href="camps.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
-   <a href="events.html"
-     class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
-   <a href="about.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
-     Us</a>
-   <a href="contact.html"
-     class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
- </div>
-
- <!-- Contact Icons (hidden on mobile) -->
- <div class="hidden md:flex space-x-2 items-center">
-   <a href="tel:+45 20 98 74 77">
-     <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-       alt="call">
-   </a>
-   <a href="mailto:info@elstudio.dk">
-     <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-       alt="mail">
-   </a>
- </div>
-
- <!-- Mobile Menu (hidden by default) -->
- <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
-   <div class="flex flex-col justify-center items-center space-y-6">
-     <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
-     <a href="classes.html" class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Classes</a>
-     <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
-     <a href="events.html" class="text-white text-lg font-oswald uppercase">Events</a>
-     <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
-     <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
-   </div>
-   <div class="space-x-2 flex justify-center">
-     <a href="tel:+45 20 98 74 77">
-       <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-         alt="call">
-     </a>
-     <a href="mailto:info@elstudio.dk">
-       <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
-         alt="mail">
-     </a>
-   </div>
- </div>
-</nav>
-
-  <div class="holder font-oswald">
-    <!-- Dance Styles Section -->
-  <section class="dance-styles">
-    <div>
-      <h2 class="topheadline">Dance Styles</h2>
-      <p class="toptext1">
-        EL Studio has a wide range of dance styles. If there is a style you are interested in that we do not currently
-        have as a regular class, you are very welcome to contact us, and we can put you on a waiting list for the desired
-        class. Then we will contact you when we have the opportunity to open the class.
-      </p>
-    </div>
-  </section>
-  <h2 class="headline font-oswald">Jazz & Modern</h2>
-
-  <!-- Jazz & Modern Section -->
-  <section class="jazz-modern">
-    <div>
-      
-
-      <div class="jazz-modern-content">
-        <!-- Text Content -->
-        <div class="jazz-modern-text">
-          <p class="toptext1">
-            Our Jazz and Modern classes offer a dynamic blend of styles, allowing dancers to build a strong technical
-            foundation while unlocking their creative potential. Drawing inspiration from Jazz, Modern, Ballet, and
-            more, we place an emphasis on grace, flexibility, strength, and control.
-          </p>
-          <p class="toptext">
-            The exercises should motivate the dancers to get to know their body better and thereby increase the awareness of centre stability and weight placement. 
-          </p>
-
-          <h3 class="font-oswald h3headline">What can you expect in the class?</h3>
-          <p class="toptext1">Each class begins with a comprehensive warm-up, carefully designed to activate your muscles, improve posture, and increase your range of motion. 
-            From there, you'll explore fluidity in movement and experiment with rhythm, weight shifts, and timing as you dance across the studio.  </p>
-          
-
-          <h3 class="font-oswald h3headline">Book Your Jazz & Modern Class at EL Studio Today!</h3>
-          <p class="toptext1">
-            Are you ready to discover your energy and rhythm? 
-Don’t wait any longer—sign up for our Jazz class today! Whether you’re a beginner or looking to refine your skills, our classes offer the perfect blend of technique, fun, and expression.
-          </p>
-          <p class="toptext">Click the button below to reserve your spot and join our vibrant dance community.</p>
-          <a href="signup.html" class="btn">Book your class here</a>
+        <!-- Links (hidden on mobile) -->
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+            <a href="classes.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all  bg-[#E94E85] py-5 px-2">Classes</a>
+            <a href="camps.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
+            <a href="events.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
+            <a href="about.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
+                Us</a>
+            <a href="contact.html"
+                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
         </div>
 
-        <!-- Image Content -->
-       
+        <!-- Contact Icons (hidden on mobile) -->
+        <div class="hidden md:flex space-x-2 items-center">
+            <a href="tel:+45 20 98 74 77">
+                <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                    class="bg-[#E94E85] rounded-full p-3" alt="call">
+            </a>
+            <a href="mailto:info@elstudio.dk">
+                <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                    class="bg-[#E94E85] rounded-full p-3" alt="mail">
+            </a>
+        </div>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
+            <div class="flex flex-col justify-center items-center space-y-6">
+                <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+                <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
+                <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
+                <a href="events.html"
+                    class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Events</a>
+                <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
+                <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
+            </div>
+            <div class="space-x-2 flex justify-center">
+                <a href="tel:+45 20 98 74 77">
+                    <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                        class="bg-[#E94E85] rounded-full p-3" alt="call">
+                </a>
+                <a href="mailto:info@elstudio.dk">
+                    <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                        class="bg-[#E94E85] rounded-full p-3" alt="mail">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Dance Styles Section -->
+    <section class="py-8 px-10 mt-8 bg-white w-full shadow-md">
+      <h2 class="text-2xl font-bold uppercase mb-3 text-[#393939] font-oswald">Dance Styles</h2>
+      <p class="opacity-80 text-[#393939] pt-5 font-inter">
+        EL Studio has a wide range of dance styles. If there is a style you are interested in that we do not currently
+        have as a regular class, you are very welcome to contact us, and we can put you on a waiting list for the desired class.
+      </p>
+    </section>
+
+    <!-- Jazz & Modern Section -->
+    <section class="py-8 px-10 mt-8 bg-white w-full shadow-md">
+      <h2 class="text-2xl font-bold uppercase mb-3 text-[#393939] font-oswald">Jazz & Modern</h2>
+      <div class="flex md:flex-row flex-col justify-center md:space-x-8 space-y-6">
+        <img src="img/cl2-1.png" alt="Jazz dancers" class="md:w-1/3">
+        <p class="md:w-2/3 font-inter opacity-80">
+          Our Jazz and Modern classes offer a dynamic blend of styles, allowing dancers to build a strong technical
+          foundation while unlocking their creative potential. Drawing inspiration from Jazz, Modern, Ballet, and more,
+          we place an emphasis on grace, flexibility, strength, and control. The exercises motivate dancers to know their
+          body better and increase awareness of centre stability and weight placement.
+        </p>
       </div>
-      
-    </div>
-    <div class="jazz-modern-images">
-      <img class="imgstyle" src="img/cl2-1.png" alt="Jazz dancers">
-      <img class="imgstyle" src="img/cl2-2.png" alt="Modern dance pose">
-      <img class="imgstyle" src="img/cl2-3.png" alt="Dance performance">
-    
-    </div>
-  </section>
+    </section>
 
-  <!-- Video Section -->
-  
+    <section class="py-8 px-10 mt-8 bg-white w-full shadow-md">
+      <h2 class="text-2xl font-bold uppercase mb-3 text-[#393939] font-oswald">What can you expect in the class?</h2>
+      <p class="font-inter opacity-80">
+        Each class begins with a comprehensive warm-up designed to activate muscles, improve posture, and increase your
+        range of motion. From there, you'll explore fluidity in movement and experiment with rhythm, weight shifts, and timing.
+      </p>
+      <h2 class="text-2xl font-bold uppercase mt-8 mb-3 text-[#393939] font-oswald">Book Your Jazz & Modern Class at EL Studio Today!</h2>
+      <p class="font-inter opacity-80">
+        Ready to discover your energy and rhythm? Sign up for our Jazz class today! Whether you’re a beginner or looking
+        to refine your skills, our classes offer the perfect blend of technique, fun, and expression.
+      </p>
+      <a href="signup.html"><button class="bg-[#E94E85] font-oswald text-white py-2 px-4 rounded mt-6 font-bold uppercase">Book your class here</button></a>
+    </section>    
 
-  <!-- Schedule Section -->
-  <section class="schedule">
-    <div class="video-placeholder">
-      <img class="video" src="img/videoplaceholder.png" alt="">
-    </div>
-    <div>
-      <h2>Schedule Jazz & Modern</h2>
-      <table>
-        <thead>
-          <tr class="scname">
-            <th>Weekday</th>
-            <th>Period</th>
-            <th>Time</th>
-            <th>Classroom</th>
-            <th>Level</th>
-            <th>Age/Gender</th>
-            <th>Price</th>
-            <th>Instructor</th>
-            <th>Sign up</th>
-            <th>Class no.</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Tuesday</td>
-            <td>Period 1</td>
-            <td>19:00 - 20:00</td>
-            <td>Room A</td>
-            <td>Beginner</td>
-            <td>12-15/Female</td>
-            <td>$20</td>
-            <td>Jane Doe</td>
-            <td><a href="#">Sign up</a></td>
-            <td>201</td>
-          </tr>
-          <!-- Add more rows as necessary -->
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Tuesday</td>
-            <td>Period 1</td>
-            <td>19:00 - 20:00</td>
-            <td>Room A</td>
-            <td>Beginner</td>
-            <td>12-15/Female</td>
-            <td>$20</td>
-            <td>Jane Doe</td>
-            <td><a href="#">Sign up</a></td>
-            <td>201</td>
-          </tr>
-          <!-- Add more rows as necessary -->
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Tuesday</td>
-            <td>Period 1</td>
-            <td>19:00 - 20:00</td>
-            <td>Room A</td>
-            <td>Beginner</td>
-            <td>12-15/Female</td>
-            <td>$20</td>
-            <td>Jane Doe</td>
-            <td><a href="#">Sign up</a></td>
-            <td>201</td>
-          </tr>
-          <!-- Add more rows as necessary -->
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Tuesday</td>
-            <td>Period 1</td>
-            <td>19:00 - 20:00</td>
-            <td>Room A</td>
-            <td>Beginner</td>
-            <td>12-15/Female</td>
-            <td>$20</td>
-            <td>Jane Doe</td>
-            <td><a href="#">Sign up</a></td>
-            <td>201</td>
-          </tr>
-          <!-- Add more rows as necessary -->
-        </tbody>
-      </table>
-    </div>
-  </section>
+    <!-- Schedule Section -->
+    <section class="py-8 px-10 mt-8 bg-white w-full shadow-md">
+      <h2 class="text-2xl font-bold uppercase mb-3 text-[#393939] font-oswald">Schedule Jazz & Modern</h2>
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full border-collapse">
+          <thead>
+            <tr class="bg-[#E94E85] text-white font-oswald">
+              <th class="px-4 py-2">Weekday</th>
+              <th class="px-4 py-2">Period</th>
+              <th class="px-4 py-2">Time</th>
+              <th class="px-4 py-2">Classroom</th>
+              <th class="px-4 py-2">Level</th>
+              <th class="px-4 py-2">Age/Gender</th>
+              <th class="px-4 py-2">Price</th>
+              <th class="px-4 py-2">Instructor</th>
+              <th class="px-4 py-2">Sign up</th>
+              <th class="px-4 py-2">Class no.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-gray-100 font-inter opacity-80">
+              <td class="border px-4 py-2">Monday</td>
+              <td class="border px-4 py-2">Period 1</td>
+              <td class="border px-4 py-2">18:00 - 19:00</td>
+              <td class="border px-4 py-2">Room B</td>
+              <td class="border px-4 py-2">Intermediate</td>
+              <td class="border px-4 py-2">16-18/Female</td>
+              <td class="border px-4 py-2">$25</td>
+              <td class="border px-4 py-2">John Smith</td>
+              <td class="border px-4 py-2"><a href="#" class="text-[#E94E85]">Sign up</a></td>
+              <td class="border px-4 py-2">202</td>
+            </tr>
+            <tr class="bg-white font-inter opacity-80">
+              <td class="border px-4 py-2">Wednesday</td>
+              <td class="border px-4 py-2">Period 2</td>
+              <td class="border px-4 py-2">17:00 - 18:00</td>
+              <td class="border px-4 py-2">Room C</td>
+              <td class="border px-4 py-2">Advanced</td>
+              <td class="border px-4 py-2">18+/Male</td>
+              <td class="border px-4 py-2">$30</td>
+              <td class="border px-4 py-2">Alice Brown</td>
+              <td class="border px-4 py-2"><a href="#" class="text-[#E94E85]">Sign up</a></td>
+              <td class="border px-4 py-2">203</td>
+            </tr>
+            <tr class="bg-gray-100 font-inter opacity-80">
+              <td class="border px-4 py-2">Thursday</td>
+              <td class="border px-4 py-2">Period 3</td>
+              <td class="border px-4 py-2">20:00 - 21:00</td>
+              <td class="border px-4 py-2">Room D</td>
+              <td class="border px-4 py-2">Beginner</td>
+              <td class="border px-4 py-2">20+/Female</td>
+              <td class="border px-4 py-2">$15</td>
+              <td class="border px-4 py-2">Mike Johnson</td>
+              <td class="border px-4 py-2"><a href="#" class="text-[#E94E85]">Sign up</a></td>
+              <td class="border px-4 py-2">204</td>
+            </tr>
+            <tr class="bg-white font-inter opacity-80">
+              <td class="border px-4 py-2">Friday</td>
+              <td class="border px-4 py-2">Period 4</td>
+              <td class="border px-4 py-2">16:00 - 17:00</td>
+              <td class="border px-4 py-2">Room E</td>
+              <td class="border px-4 py-2">Intermediate</td>
+              <td class="border px-4 py-2">18-20/Mixed</td>
+              <td class="border px-4 py-2">$20</td>
+              <td class="border px-4 py-2">Emily Davis</td>
+              <td class="border px-4 py-2"><a href="#" class="text-[#E94E85]">Sign up</a></td>
+              <td class="border px-4 py-2">205</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    </section>
   </div>
+
   <!-- Footer - Full Width -->
-  <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
+  <footer class="bg-[#393939] mt-8 text-white px-20 py-10 flex md:flex-row flex-col justify-around">
     <div>
         <h2 class="font-oswald text-2xl font-bold mb-2">ELSTUDIO.DK</h2>
         <p class="font-inter text-sm opacity-80">
@@ -280,308 +252,26 @@ Don’t wait any longer—sign up for our Jazz class today! Whether you’re a b
     </div>
 </footer>
 
-  <style>
-    .holder {
-      
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const body = document.body;
 
-    /* General Styles */
-   
-    .headline{
-        background-color: #bf306f;
-        margin: 20px;
-      margin-left: 40px;
-      margin-right: 40px;
-      color: white;
-      padding: 20px;
-      font-size: 36px;
-      font-weight: bold;
-    }
-    .h3headline{
-      font-size: 36px;
-      color: #bf306f;
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      hamburger.classList.add('hidden');
+      closeMenu.classList.remove('hidden');
+      body.style.overflow = 'hidden';
+    });
 
-    }
-    .imgstyle{
-      max-width: 464px;
-    }
-
-    h2 {
-      color: #333;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    p {
-      color: #555;
-      line-height: 1.6;
-    }
-    .toptext{
-      font-size: 36px;
-      margin: 40px 0px 40px 0px;
-    }
-    .toptext1{
-      font-size: 36px;
-      margin: 0px 0px 40px 0px;
-    }
-    .topheadline{
-      font-size: 46px;
-      font-weight: bolder;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    /* Dance Styles Section */
-    .dance-styles {
-      background-color: white;
-      padding: 40px;
-      margin-top: 40px;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-   
-
-    /* Jazz & Modern Section */
-    .jazz-modern {
-      
-      color: #333;
-      margin: 40px;
-      padding: 0;
-      display: grid;
-      grid-template-columns: 1fr 0.35fr;
-      
-    }
-    .scname{
-      background-color: #bf306f;
-      color: white;
-    }
-
-    .jazz-modern h2 {
-      color: #d63384;
-      margin-bottom: 20px;
-    }
-
-    .jazz-modern-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    .jazz-modern-text {
-      flex: 1;
-      padding: 20px 20px 20px 40px;
-      margin-right: 20px;
-      background-color: #ffffff;
-      
-    }
-
-    .jazz-modern-images {
-      flex: 1;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .jazz-modern-images img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Button */
-    .btn {
-      display: inline-block;
-      background-color: #d63384;
-      color: white;
-      padding: 20px 40px;
-      border-radius: 25px;
-      font-weight: bold;
-      margin-top: 20px;
-      font-size: 24px;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #bf306f;
-    }
-
-    
-    
-
-    /* Schedule Section */
-    .schedule {
-      background-color: white;
-      color: #333;
-      margin: 20px;
-      padding: 10px;
-      margin-bottom: 100px;
-    }
-    .video{
-      max-width: 1860px;
-      padding: 20px;
-      margin: 0;
-    }
-    .video-placeholder{
-      
-      display: flex;
-      justify-content: center;
-      margin: 20px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table th,
-    table td {
-      padding: 10px;
-      text-align: left;
-      border: 1px solid #ddd;
-    }
-
-    table th {
-      background-color: #bf306f;
-    }
-
-    table tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    table tr:hover {
-      background-color: #f1f1f1;
-    }
-
-    @media (max-width: 800px) {
-      
-      .dance-styles {
-      background-color: white;
-      padding: 0;
-      margin: 0;
-      
-    }
-    .topheadline{
-      font-size: 24px;
-      padding: 5px;
-      background-color: #E94E85;
-      margin: 20px;
-      color: white;
-    }
-    .toptext1{
-      font-size: 16px;
-      margin-bottom: 20px;
-      padding: 5px;
-      margin-right: 20px;
-      margin-left: 20px;
-
-    }
-    .toptext{
-      font-size: 16px;
-      margin: 20px;
-      padding: 5px;
-
-    }
-    .headline{
-      font-size: 24px;
-      padding: 2px;
-      background-color: #E94E85;
-      margin: 20px;
-      margin-top: 70px;
-      color: white;
-
-    }
-    .h3headline {
-     font-size: 24px;
-     margin-left: 20px;
-     color: #bf306f;
-    }
-
-    .jazz-modern {
-      
-      color: #333;
-      margin: 10px;
-      padding: 0;
-      display: grid;
-      grid-template-rows: 1fr 0.35fr;
-      grid-template-columns: none;
-    }
-    .jazz-modern-text {
-      flex: 1;
-      padding: 5px;
-      margin-right: 0;
-      margin: 10px;
-      background-color: #ffffff;
-      
-    }
-    .btn {
-      display: flex;
-      justify-content: center;
-      background-color: #d63384;
-      color: white;
-      padding: 5px 10px 5px 10px ;
-      border-radius: 10px;
-      font-weight: bold;
-      margin-top: 20px;
-      font-size: 20px;
-      margin-bottom: 20px;
-     
-      transition: background-color 0.3s ease;
-    }
-    .jazz-modern-images {
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .video {
-      max-width: 370px;
-      padding: 21px;
-      margin: 0;
-    }
-    table {
-      width: 20%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
- }
-  </style>
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      hamburger.classList.remove('hidden');
+      closeMenu.classList.add('hidden');
+      body.style.overflow = 'auto';
+    });
+  </script>
 
 </body>
-<script>
-  // Elements
-  const hamburger = document.getElementById('hamburger');
-  const closeMenu = document.getElementById('closeMenu');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const logo = document.getElementById('logo');
-  const body = document.body; // Get the body element to manipulate scrolling
-
-  // Open menu (hamburger click)
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.remove('hidden');   // Show menu
-    hamburger.classList.add('hidden');       // Hide hamburger button
-    closeMenu.classList.remove('hidden');    // Show close button
-    body.style.overflow = 'hidden';          // Disable scrolling
-  });
-
-  // Close menu (close button click)
-  closeMenu.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden');      // Hide menu
-    hamburger.classList.remove('hidden');    // Show hamburger button
-    closeMenu.classList.add('hidden');       // Hide close button
-    body.style.overflow = 'auto';            // Enable scrolling
-  });
-</script>
-
 </html>
