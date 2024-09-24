@@ -2,296 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Studio - Events</title>
-    <link href="output.css" rel="stylesheet"> <!-- Ensure this contains all necessary Tailwind styles -->
-    <link rel="icon" href="img/favicon.png" type="image/png">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="elstudio.dk" />
-    <meta property="og:url" content="https://elstudio.dk" />
-    <meta property="og:description" content="Join ElStudio for exciting dance classes, workshops, and events in Copenhagen. We offer Salsa, Bachata, Latin, Hip Hop, Ballet, and more for all ages.">
-    <meta property="og:image" content="https://damhuisict.nl/project-mette/img/logowhite%201.png">
-    <style>
-        ::selection {
-            background-color: #E94E85;
-            /* Indigo-500 */
-            color: #FFFFFF;
-            /* White */
-        }
-    </style>
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
-        <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
-
-        <!-- Hamburger Button for Mobile (hidden on desktop) -->
-        <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
-            <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
-        </button>
-        <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
-            <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
-        </button>
-
-        <!-- Links (hidden on mobile) -->
-        <div class="hidden md:flex items-center space-x-4">
-            <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
-            <a href="classes.html"
-                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Classes</a>
-            <a href="camps.html"
-                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
-            <a href="events.html"
-                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
-            <a href="about.html"
-                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
-                Us</a>
-            <a href="contact.html"
-                class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
-        </div>
-
-        <!-- Contact Icons (hidden on mobile) -->
-        <div class="hidden md:flex space-x-2 items-center">
-            <a href="tel:+45 20 98 74 77">
-                <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
-                    class="bg-[#E94E85] rounded-full p-3" alt="call">
-            </a>
-            <a href="mailto:info@elstudio.dk">
-                <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
-                    class="bg-[#E94E85] rounded-full p-3" alt="mail">
-            </a>
-        </div>
-
-        <!-- Mobile Menu (hidden by default) -->
-        <div id="mobileMenu" class="fixed top-0 left-0 w-full pb-6 bg-[#393939] space-y-4 pt-20 hidden z-30">
-            <div class="flex flex-col justify-center items-center space-y-6">
-                <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
-                <a href="classes.html" class="text-white text-lg font-oswald uppercase">Classes</a>
-                <a href="camps.html" class="text-white text-lg font-oswald uppercase">Camps</a>
-                <a href="events.html"
-                    class="text-white text-lg font-oswald uppercase border-b-2 border-gray-400">Events</a>
-                <a href="about.html" class="text-white text-lg font-oswald uppercase">About Us</a>
-                <a href="contact.html" class="text-white text-lg font-oswald uppercase">Contact</a>
-            </div>
-            <div class="space-x-2 flex justify-center">
-                <a href="tel:+45 20 98 74 77">
-                    <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
-                        class="bg-[#E94E85] rounded-full p-3" alt="call">
-                </a>
-                <a href="mailto:info@elstudio.dk">
-                    <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
-                        class="bg-[#E94E85] rounded-full p-3" alt="mail">
-                </a>
-            </div>
-        </div>
-    </nav>
-  <section class="holder">
-    <div class="form-container">
-        <form action="#" method="post">
-          <!-- Question 1 -->
-          <div class="form-group">
-            <label>1. What's your preferred pace when it comes to physical activity?</label>
-            <div class="checkbox-group">
-              <input type="checkbox" name="pace" value="fast"> Fast and energetic
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="pace" value="slow"> Slow and graceful
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="pace" value="mix"> A mix of both
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="pace" value="mood"> It depends on my mood
-            </div>
-          </div>
-    
-          <!-- Question 2 -->
-          <div class="form-group">
-            <label>2. Which of these music genres do you prefer?</label>
-            <div class="checkbox-group">
-              <input type="checkbox" name="genre" value="pop"> Pop or Hip-Hop
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="genre" value="classical"> Classical or Jazz
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="genre" value="latin"> Latin or Salsa
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="genre" value="electronic"> Electronic
-            </div>
-          </div>
-    
-          <!-- Question 3 -->
-          <div class="form-group">
-            <label>3. How do you prefer to express yourself in movement?</label>
-            <div class="checkbox-group">
-              <input type="checkbox" name="expression" value="sharp"> Sharp and powerful
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="expression" value="flowing"> Flowing and elegant
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="expression" value="playful"> Playful and rhythmic
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="expression" value="unique"> Unique and experimental
-            </div>
-          </div>
-    
-          <!-- Question 4 -->
-          <div class="form-group">
-            <label>4. What's your main goal in joining a dance goal?</label>
-            <div class="checkbox-group">
-              <input type="checkbox" name="goal" value="workout"> To get a great workout and have fun
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="goal" value="posture"> To improve on my posture and flexibility
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="goal" value="cultural"> To learn cultural dance styles and meet new people
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" name="goal" value="creativity"> To explore my creativity and try something new
-            </div>
-          </div>
-    
-         
-        </form>
-        <!-- Submit Button -->
-        <a href="ty.html">
-          <button>Submit</button>
-        </a>
-      </div>
-  </section>
-   <!-- Footer - Full Width -->
-   <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
-    <div>
-        <h2 class="font-oswald text-2xl font-bold mb-2">ELSTUDIO.DK</h2>
-        <p class="font-inter text-sm opacity-80">
-            Dansende Dynamisk Verden Skole<br>
-            c/o ElStudio<br>
-            Blågårdsgade 37, stuen<br>
-            2200 København. CVR: 26170974<br>
-            Email: info@elstudio.dk<br>
-            Phone +4520987477 (We also have WhatsApp)<br>
-            Monday - Thursday: kl. 11.00-16.00 and Friday: kl. 11.00-14.00.<br>
-            (After the office hours, you can send an SMS, and we will get back to you)
-        </p>
-    </div>
-    <div>
-        <h3 class="font-oswald text-2xl font-bold mb-2">DANCE CLASSES</h3>
-        <p class="font-inter text-sm opacity-80">
-            Kids & Teen Classes<br>
-            Dance Classes<br>
-            Latin Dance Classes
-        </p>
-    </div>
-    <div>
-        <h3 class="font-oswald text-2xl font-bold mb-2">BOOK US</h3>
-        <p class="font-inter text-sm opacity-80">
-            Private lessons<br>
-            Bachelorette parties<br>
-            Dance events<br>
-            Performances<br>
-            Company events<br>
-            Cultural events<br>
-            Birthdays<br>
-            Kids’ parties
-        </p>
-    </div>
-    <div>
-        <h3 class="font-oswald text-2xl font-bold mb-2">ABOUT</h3>
-        <p class="font-inter text-sm opacity-80">
-            About us<br>
-            Newsletter<br>
-            ElStudio Crew<br>
-            Conditions of use<br>
-            FAQ<br>
-            Sitemap
-        </p>
-    </div>
-</footer>
-</body>
-<style>
-    .holder{
-      font-family: Arial, sans-serif;
-      background-color: #f3f4f6;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     
-      margin: 0;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Studio - Quiz</title>
+  <link href="output.css" rel="stylesheet"> <!-- Ensure this contains all necessary Tailwind styles -->
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <meta charset="utf-8" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="elstudio.dk" />
+  <meta property="og:url" content="https://elstudio.dk" />
+  <meta property="og:description"
+    content="Join ElStudio for exciting dance classes, workshops, and events in Copenhagen. We offer Salsa, Bachata, Latin, Hip Hop, Ballet, and more for all ages.">
+  <meta property="og:image" content="https://damhuisict.nl/project-mette/img/logowhite%201.png">
+  <style>
+    ::selection {
+      background-color: #E94E85;
+      /* Indigo-500 */
+      color: #FFFFFF;
+      /* White */
     }
-    .form-container {
-      background-color: #fce4ec;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 320px;
-      margin-bottom: 20px;
-      margin-top: 20px;
-    }
-    label {
-      font-weight: bold;
-      background-color: #ec407a; 
-      color: black; 
-      padding: 8px;
-      display: block;
-      margin-bottom: 8px;
-      width: calc(100% + 21px); 
-      margin-left: px; 
-      margin-right: -20px; 
-    }
-    .form-group {
-      margin-bottom: 16px;
-    }
-    .checkbox-group {
-      margin-bottom: 8px;
-    }
-    input[type="checkbox"] {
-      margin-right: 10px;
-    }
-    button {
-      background-color: #ec407a;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      width: 100%;
-      font-size: 16px;
-    }
-    button:hover {
-      background-color: #d81b60;
-    }
-
-    
   </style>
-  <script>
-    // Elements
-    const hamburger = document.getElementById('hamburger');
-    const closeMenu = document.getElementById('closeMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const logo = document.getElementById('logo');
-    const body = document.body; // Get the body element to manipulate scrolling
+</head>
 
-    // Open menu (hamburger click)
-    hamburger.addEventListener('click', () => {
-        mobileMenu.classList.remove('hidden');   // Show menu
-        hamburger.classList.add('hidden');       // Hide hamburger button
-        closeMenu.classList.remove('hidden');    // Show close button
-        body.style.overflow = 'hidden';          // Disable scrolling
-    });
+<body class="bg-gray-100 relative">
 
-    // Close menu (close button click)
-    closeMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');      // Hide menu
-        hamburger.classList.remove('hidden');    // Show hamburger button
-        closeMenu.classList.add('hidden');       // Hide close button
-        body.style.overflow = 'auto';            // Enable scrolling
-    });
-</script>
+  <!-- Navbar -->
+  <nav class="bg-[#393939] px-6 md:px-20 py-3 shadow-md flex justify-between items-center relative z-20">
+    <img src="img/logowhite 1.png" class="h-8 z-50" alt="ElStudio">
+
+    <!-- Hamburger Button for Mobile (hidden on desktop) -->
+    <button class="text-white text-lg font-oswald uppercase md:hidden z-50" id="hamburger">
+      <img src="img/icon/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="menu button">
+    </button>
+    <button class="text-white text-lg font-oswald uppercase hidden z-50" id="closeMenu">
+      <img src="img/icon/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="close-button">
+    </button>
+
+    <!-- Links (hidden on mobile) -->
+    <div class="hidden md:flex items-center space-x-4">
+      <a href="index.html" class="text-white text-lg font-oswald uppercase">Home</a>
+      <a href="classes.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all bg-[#E94E85] py-5 px-2">Classes</a>
+      <a href="camps.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Camps</a>
+      <a href="events.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Events</a>
+      <a href="about.html" class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">About
+        Us</a>
+      <a href="contact.html"
+        class="text-white hover:text-gray-500 text-lg font-oswald uppercase transition-all">Contact</a>
+    </div>
+
+    <!-- Contact Icons (hidden on mobile) -->
+    <div class="hidden md:flex space-x-2 items-center">
+      <a href="tel:+45 20 98 74 77">
+        <img src="img/icon/call_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+          alt="call">
+      </a>
+      <a href="mailto:info@elstudio.dk">
+        <img src="img/icon/mail_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg" class="bg-[#E94E85] rounded-full p-3"
+          alt="mail">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Quiz Section -->
+  <div class="max-w-4xl mx-auto mt-10 px-6 md:px-10 py-8 bg-white shadow-md rounded-lg">
+    <h2 class="text-2xl font-oswald font-bold uppercase text-[#393939] mb-6">Take Our Dance Quiz</h2>
+
+    <form action="#" method="post">
+      <!-- Question 1 -->
+      <div class="form-group mb-6">
+        <label class="text-lg font-oswald font-bold uppercase text-[#E94E85] mb-3 block" for="pace">1. What's your preferred pace when it comes to physical activity?</label>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="fast" name="pace" value="fast" class="mr-2">
+          <label for="fast" class="font-inter opacity-80">Fast and energetic</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="slow" name="pace" value="slow" class="mr-2">
+          <label for="slow" class="font-inter opacity-80">Slow and graceful</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="mix" name="pace" value="mix" class="mr-2">
+          <label for="mix" class="font-inter opacity-80">A mix of both</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="mood" name="pace" value="mood" class="mr-2">
+          <label for="mood" class="font-inter opacity-80">It depends on my mood</label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="form-group mb-6">
+        <label class="text-lg font-oswald font-bold uppercase text-[#E94E85] mb-3 block" for="genre">2. Which of these music genres do you prefer?</label>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="pop" name="genre" value="pop" class="mr-2">
+          <label for="pop" class="font-inter opacity-80">Pop or Hip-Hop</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="classical" name="genre" value="classical" class="mr-2">
+          <label for="classical" class="font-inter opacity-80">Classical or Jazz</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="latin" name="genre" value="latin" class="mr-2">
+          <label for="latin" class="font-inter opacity-80">Latin or Salsa</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="electronic" name="genre" value="electronic" class="mr-2">
+          <label for="electronic" class="font-inter opacity-80">Electronic</label>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="form-group mb-6">
+        <label class="text-lg font-oswald font-bold uppercase text-[#E94E85] mb-3 block" for="expression">3. How do you prefer to express yourself in movement?</label>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="sharp" name="expression" value="sharp" class="mr-2">
+          <label for="sharp" class="font-inter opacity-80">Sharp and powerful</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="flowing" name="expression" value="flowing" class="mr-2">
+          <label for="flowing" class="font-inter opacity-80">Flowing and elegant</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="playful" name="expression" value="playful" class="mr-2">
+          <label for="playful" class="font-inter opacity-80">Playful and rhythmic</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="unique" name="expression" value="unique" class="mr-2">
+          <label for="unique" class="font-inter opacity-80">Unique and experimental</label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="form-group mb-6">
+        <label class="text-lg font-oswald font-bold uppercase text-[#E94E85] mb-3 block" for="goal">4. What's your main goal in joining a dance class?</label>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="workout" name="goal" value="workout" class="mr-2">
+          <label for="workout" class="font-inter opacity-80">To get a great workout and have fun</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="posture" name="goal" value="posture" class="mr-2">
+          <label for="posture" class="font-inter opacity-80">To improve on my posture and flexibility</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="cultural" name="goal" value="cultural" class="mr-2">
+          <label for="cultural" class="font-inter opacity-80">To learn cultural dance styles and meet new people</label>
+        </div>
+        <div class="checkbox-group mb-2">
+          <input type="checkbox" id="creativity" name="goal" value="creativity" class="mr-2">
+          <label for="creativity" class="font-inter opacity-80">To explore my creativity and try something new</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="mt-6">
+        <a href="ty.html">
+        <button type="submit"
+          class="w-full bg-[#E94E85] text-white py-3 px-6 font-oswald uppercase rounded-md hover:bg-[#e91e63]">Submit</button>
+      </div>
+    </a>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around mt-10">
+    <div>
+      <h2 class="font-oswald text-2xl font-bold mb-2">ELSTUDIO.DK</h2>
+      <p class="font-inter text-sm opacity-80">
+        Dansende Dynamisk Verden Skole<br>
+        c/o ElStudio<br>
+        Blågårdsgade 37, stuen<br>
+        2200 København. CVR: 26170974<br>
+        Email: info@elstudio.dk<br>
+        Phone +4520987477 (We also have WhatsApp)<br>
+        Monday - Thursday: kl. 11.00-16.00 and Friday: kl. 11.00-14.00.<br>
+        (After the office hours, you can send an SMS, and we will get back to you)
+      </p>
+    </div>
+    <div>
+      <h3 class="font-oswald text-2xl font-bold mb-2">DANCE CLASSES</h3>
+      <p class="font-inter text-sm opacity-80">
+        Kids & Teen Classes<br>
+        Dance Classes<br>
+        Latin Dance Classes
+      </p>
+    </div>
+    <div>
+      <h3 class="font-oswald text-2xl font-bold mb-2">BOOK US</h3>
+      <p class="font-inter text-sm opacity-80">
+        Private lessons<br>
+        Bachelorette parties<br>
+        Dance events<br>
+        Performances<br>
+        Company events<br>
+        Cultural events<br>
+        Birthdays<br>
+        Kids’ parties
+      </p>
+    </div>
+    <div>
+      <h3 class="font-oswald text-2xl font-bold mb-2">ABOUT</h3>
+      <p class="font-inter text-sm opacity-80">
+        About us<br>
+        Newsletter<br>
+        ElStudio Crew<br>
+        Conditions of use<br>
+        FAQ<br>
+        Sitemap
+      </p>
+    </div>
+  </footer>
+
+</body>
+
 </html>
