@@ -86,63 +86,75 @@
             </div>
         </div>
     </nav>
-   <section class="holder">
-    <div class="form-container">
-        <h1>Credit Card Details</h1>
-
-        <form>
-            <!-- Payment Method Section -->
-            <div class="payment-method">
-                <label for="payment-method">Payment Method</label>
-                <div class="payment-icons">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Amex_logo.svg" alt="American Express">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Discover_Card_logo.svg" alt="Discover">
+    <section class="holder">
+        <div class="form-container">
+            <h1 class="text-2xl font-oswald font-bold uppercase text-[#393939]">Credit Card Details</h1>
+    
+            <form>
+                <!-- Payment Method Section -->
+                <div class="payment-method">
+                    <label for="payment-method" class="font-oswald font-bold uppercase text-[#393939]">Payment Method</label>
+                    <div class="payment-icons flex justify-between mt-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="h-8 w-auto object-contain">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="h-8 w-auto object-contain">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1000px-American_Express_logo_%282018%29.svg.png" alt="American Express" class="rounded-full h-8 w-auto object-contain">
+                        <img src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png" alt="Paypal" class="h-8 w-auto object-contain">
+                        <img src="https://servicepos.com/wp-content/uploads/2022/02/MobilePay.png" alt="MobilePay" class="h-8 w-auto object-contain">
+                    </div>                                   
                 </div>
-            </div>
-
-            <!-- Name on card -->
-            <label for="card-name">Name on card</label>
-            <input type="text" id="card-name" name="card-name" placeholder="Meet Patel">
-
-            <!-- Card number -->
-            <label for="card-number">Card number</label>
-            <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000">
-
-            <!-- Card Expiration -->
-            <div class="expiration-row">
-                <div class="expiration">
-                    <label for="expiration-month">Card expiration</label>
-                    <select id="expiration-month" name="expiration-month">
-                        <option>Month</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <!-- Add more months as needed -->
-                    </select>
+    
+                <!-- Name on card -->
+                <label for="card-name" class="font-oswald font-bold uppercase text-[#393939]">Name on card</label>
+                <input type="text" id="card-name" name="card-name" placeholder="Your name" class="input-field">
+    
+                <!-- Card number -->
+                <label for="card-number" class="font-oswald font-bold uppercase text-[#393939]">Card number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="0000 0000 0000 0000" class="input-field">
+    
+                <!-- Card Expiration -->
+                <div class="expiration-row flex justify-between">
+                    <div class="expiration w-1/2">
+                        <label for="expiration-month" class="font-oswald font-bold uppercase text-[#393939]">Expiration Month</label>
+                        <select id="expiration-month" name="expiration-month" class="input-field">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <!-- Add more months as needed -->
+                        </select>
+                    </div>
+                    <div class="expiration w-1/2">
+                        <label for="expiration-year" class="font-oswald font-bold uppercase text-[#393939]">Expiration Year</label>
+                        <select id="expiration-year" name="expiration-year" class="input-field">
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <!-- Add more years as needed -->
+                        </select>
+                    </div>
                 </div>
-                <div class="expiration">
-                    <label>&nbsp;</label>
-                    <select id="expiration-year" name="expiration-year">
-                        <option>Year</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
-                        <!-- Add more years as needed -->
-                    </select>
-                </div>
-            </div>
-
-            <!-- Card Security Code -->
-            <label for="security-code">Card Security Code</label>
-            <input type="text" id="security-code" name="security-code" placeholder="Code">
-
-            <!-- Submit Button -->
-            <a class="submit-btn" href="ty.html">Continue</a>
-        </form>
-    </div>
-   </section>
+    
+                <!-- Card Security Code -->
+                <label for="security-code" class="font-oswald font-bold uppercase text-[#393939]">Security Code</label>
+                <input type="text" id="security-code" name="security-code" placeholder="Code" class="input-field">
+    
+                <!-- Submit Button -->
+                <a class="submit-btn font-oswald font-bold uppercase text-white bg-[#E94E85] hover:bg-[#e91e63] py-3 px-6 rounded-md mt-4 text-center" href="ty.html">Continue</a>
+            </form>
+        </div>
+    </section>
+    
      <!-- Footer - Full Width -->
      <footer class="bg-[#393939] text-white px-20 py-10 flex md:flex-row flex-col justify-around">
         <div>
